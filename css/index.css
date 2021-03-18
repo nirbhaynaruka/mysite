@@ -36,7 +36,6 @@ img{
 }
 .section2{
     height: 100vh;
-
     background-color: #e27d60;
     
 }
@@ -69,7 +68,7 @@ section{
   } */
   .exptitle{
     padding: 1rem;
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: bold;
     color: white;
   
@@ -166,4 +165,10 @@ section{
 }
 .card .details .center ul li a:hover {
     background: #ff3636;
+}
+.section3{
+
+}
+.projectcard{
+
 }
