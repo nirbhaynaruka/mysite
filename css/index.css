@@ -22,6 +22,7 @@
 img{
     display: block;
     margin: auto;
+    width: 100%;
 }
 .aboutimage{
     padding-top: 1rem;
@@ -166,9 +167,12 @@ section{
 .card .details .center ul li a:hover {
     background: #ff3636;
 }
-.section3{
-
+/* sds */
+.nav1{
+    height: 100vh;
 }
-.projectcard{
+.nav2{
+    height: auto;
+    background-color: cornsilk;
 
 }
