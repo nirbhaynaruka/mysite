@@ -7,12 +7,12 @@ body {
   /* Space from this element (entire page) and others*/
   padding: 0;
   /*space from content and border*/
-  border: solid white;
-  border-width: thick;
+  border: solid #292828;
+  border-width: 15px; /*thick*/
   overflow: auto;
   display: block;
   box-sizing: border-box;
-  background-color: #3aafa9;
+  background-color: black;
 }
 
 ::-webkit-scrollbar {
@@ -21,7 +21,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #e27d60;
+  background: black;
   border-radius: 10px;
   border-left: solid white !important;
 }
