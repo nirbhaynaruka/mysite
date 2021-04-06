@@ -278,7 +278,7 @@ img {
     text-align: justify;
     font-weight: bold;
     font-size: small;
-    color: white;
+    /* color: white; */
 }
 
 /* .hide {
@@ -298,3 +298,179 @@ img {
     filter: drop-shadow(-20px -2px 0 #292828);
             /* drop-shadow(-1px -1px 0 white); */
   }
+  @media (min-width: 0) and (max-width: 767px){
+    .button30 {
+        color: rgba(255, 255, 255, 1);
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        position: relative;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        border-top-style: solid;
+        border-bottom-style: solid;
+        border-top-color: rgba(255, 255, 255, 0.5);
+        border-bottom-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .button30 span {
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    
+    .button30:hover span {
+        letter-spacing: 2px;
+    }
+    
+    .button30:hover {
+        border-top-color: rgba(255, 255, 255, 0);
+        border-bottom-color: rgba(255, 255, 255, 0);
+    }
+    
+    .button30 a {
+        color: rgba(51, 51, 51, 1);
+        text-decoration: none;
+        display: block;
+    }
+    
+    .button30::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1px;
+        height: 100%;
+        z-index: 1;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .button30:hover::before {
+        -webkit-transform: translate(-94.9845px, 0) rotate(270deg);
+        -moz-transform: translate(-94.9845px, 0) rotate(270deg);
+        transform: translate(-94.9845px, 0) rotate(270deg);
+    }
+    
+    .button30::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        z-index: 1;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .button30:hover::after {
+        -webkit-transform: translate(94.9845px, 0) rotate(180deg);
+        -moz-transform: translate(94.9845px, 0) rotate(180deg);
+        transform: translate(94.9845px, 0) rotate(180deg);
+    }
+    
+    
+    .wrapper-inner-tab-backgrounds-second {
+        float: left;
+        /* height: 300px; */
+        width: 33.33%;
+        /* background-color: #5e7c87; */
+    }
+    
+    .wrapper-inner-tab-backgrounds-first {
+        float: right;
+        /* height: 300px; */
+        width: 33.33%;
+        /* background-color: #5e7c87; */
+    }
+    
+    .sim-button {
+        line-height: 50px;
+        height: 50px;
+        text-align: center;
+        /* margin-right: auto; */
+        margin-left: 0;
+        margin-top: 50%;
+        width: 70%;
+        /* cursor: pointer; */
+    }
+    
+    .sim-button1 {
+        line-height: 50px;
+        height: 50px;
+        text-align: center;
+        /* margin-right: auto; */
+        margin-left: 49.5%;
+        margin-top: 50%;
+        width: 50%;
+        /* cursor: pointer; */
+    }
+    
+    .rotateX {
+        cursor: pointer;
+    }
+    
+    .rotateX:hover {
+        transform: rotateX(360deg);
+        -moz-transform: rotateX(360deg);
+        -webkit-transform: rotateX(360deg);
+        transform-origin: center;
+        -moz-transform-origin: center;
+        -webkit-transform-origin: center;
+    
+        transition: transform 1.0s ease all;
+        -moz-transition: -moz-transform 1.0s ease all;
+        -webkit-transition: -webkit-transform 1.0s ease all;
+    }
+    
+    .aButton {
+        transition: 1.0s ease all;
+        -moz-transition: 1.0s ease all;
+        -webkit-transition: 1.0s ease all;
+    
+        border: none;
+        border-radius: 3px;
+        padding: 0px 10px 0px 10px;
+    
+        text-decoration: none;
+    
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+    
+    .aButton:hover {
+        transition: 1.0s ease all;
+        -moz-transition: 1.0s ease all;
+        -webkit-transition: 1.0s ease all;
+    
+    }
+    .image{
+        padding: inherit;
+
+    }
+img {
+    width: 85%;
+    position: absolute;
+    /* max-height: 75vh; */
+
+}
+
+.text {
+    margin-top: 90%;
+    position: absolute;
+    padding: 10%;
+    text-align: justify;
+    font-weight: bold;
+    font-size: small;
+}
+    
+}
