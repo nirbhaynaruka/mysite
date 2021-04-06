@@ -36,6 +36,7 @@
 </head>
 
 <body>
+    <div class="se-pre-con"></div>
     <header>
         <div class="logo_name">
             <h4><a> Nirbhay Singh Naruka</a></h4>
@@ -73,7 +74,8 @@
         </div>
     </section>
     <div class="wrapper-inner-tab-backgrounds-second">
-        <div class="sim-button button30 aButton rotateX github"><span><a href="html/Expertise.html">Expertise</a></span></div>
+        <div class="sim-button button30 aButton rotateX github"><span><a href="html/Expertise.html">Expertise</a></span>
+        </div>
     </div>
     <div class="wrapper-inner-tab-backgrounds-first">
         <div class="sim-button1 button30 aButton rotateX"><span><a href="html/works.html">Works</a></span></div>
@@ -177,6 +179,14 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script>
+        $(window).load(function () {
+            // Animate loader off screen
+            $(".se-pre-con").delay(3000).fadeOut("slow");;
+        });
+    </script>
 
     <script src="js/fixed.js"></script>
     <script>
