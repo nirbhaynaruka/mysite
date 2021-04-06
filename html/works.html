@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -31,132 +31,383 @@
 
     <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
     <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-    <link rel="stylesheet" href="../css/fixed.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <!-- fileblock:css css -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
+    <!-- <link href="https://www.cappen.com//styles/main.css" rel="stylesheet" /> -->
+    <!-- <link href="https://www.cappen.com//styles/main-new.css" rel="stylesheet" />
+    <link href="https://www.cappen.com//styles/vendor.css" rel="stylesheet" /> -->
+    <!-- <link href="../css/fixed.css" rel="stylesheet" /> -->
+    <link href="../css/works.css" rel="stylesheet" />
+    <link href="../css/expertise.css" rel="stylesheet" />
+
+    <!-- endfileblock -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TB322GZ');
+    </script>
+    <!-- End Google Tag Manager -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-70072834-1', 'auto');
+        ga('require', 'linkid');
+        ga('send', 'pageview');
+    </script>
+
+    <!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3661906034971479",
+            enable_page_level_ads: true
+        });
+    </script>
 </head>
 
 <body>
-    <header>
-        <div class="logo_name">
-            <h4><a> Nirbhay Singh Naruka</a></h4>
+
+    <nav class="back">
+        <div class="">
+            <a class="" href="../index.html">Back</a>
+            <hr>
         </div>
-    </header>
 
-    <!-- <header>
-        <nav class="navbar navbar-expand-lg navtext">
-            <a class="navbar-brand" href="#">Nirbhay Singh Naruka</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <div class="nav_tog" onclick="myFunction(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
+    </nav>
+
+
+
+    <div id="works" class="animation-container --in">
+
+
+        <h1 class="visually-hidden">Works</h1>
+
+
+        <div class="container --height">
+            <nav class="menu-works">
+                <span class="menu-works__line"></span>
+                <span class="menu-works__line-active"></span>
+                <div class="table">
+                    <div class="table__vAlign">
+                        <a class="menu-works__item" data-menuanchor="work-beach-park" href="#work-beach-park"><span
+                                class="menu-works__item__text">BeaPark</span></a>
+                        <a class="menu-works__item" data-menuanchor="work-shopping-recife"
+                            href="#work-shopping-recife"><span class="menu-works__item__text">Shopping Recife</span></a>
+                        <a class="menu-works__item" data-menuanchor="work-damas" href="#work-damas"><span
+                                class="menu-works__item__text">Damas</span></a>
+                        <a class="menu-works__item" data-menuanchor="work-richester" href="#work-richester"><span
+                                class="menu-works__item__text">Richester</span></a>
+                        <a class="menu-works__item" data-menuanchor="work-radio" href="#work-radio"><span
+                                class="menu-works__item__text">Radio</span></a>
+                        <a class="menu-works__item" data-menuanchor="work-lacta" href="#work-lacta"><span
+                                class="menu-works__item__text">Lacta</span></a>
+                        <a class="menu-works__item" data-menuanchor="work-midiorama" href="#work-midiorama"><span
+                                class="menu-works__item__text">Midiorama</span></a>
+                        <a class="menu-works__item" data-menuanchor="work-santa-joana" href="#work-santa-joana"><span
+                                class="menu-works__item__text">Santa Joana</span></a>
+                        <a class="menu-works__item" data-menuanchor="work-tang" href="#work-tang"><span
+                                class="menu-works__item__text">Tang</span></a>
+                        <a class="menu-works__item" data-menuanchor="work-vos" href="#work-vos"><span
+                                class="menu-works__item__text">Vós</span></a>
+                    </div>
                 </div>
-            </button>
-            <div class="collapse navbar-collapse centernav" id="navbarSupportedContent">
-                <ul class="navbar-nav centernavui">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#">Work </a>
-                    </li>
-                    <li class="nav-item nav__item--contact">
-                        <a class="nav-link nav__link" href="#">
+            </nav>
+        </div>
+        <div class="count-works"><span class="count-works__current">1</span><span class="count-works__total"></span>
+        </div>
+        <div class="setas-works"></div>
+        <div class="works">
+            <div class="work work1">
+                <!-- <div class="work__bg"></div> -->
+                <!-- background image -->
+                <!-- <div class="layer" data-depth="0.40">
+                    <div class="work__obj --bg"></div>
+                </div> -->
+                <!-- <div class="layer visible-mobile" data-depth="0.20">
+                    <div class="work__obj --mobile"></div>
+                </div> -->
+                <div class="table">
+                    <div class="table__vAlign">
+                        <div class="container">
+                            <a href="https://www.cappen.com/work/beach-park" class="work__link link-page">
+                                <h2 class="work__title">Beach Park</h2>
+                                <span class="icon-timer">
+                                    <svg>
+                                        <circle class="icon-timer__circle-animation" />
+                                    </svg>
+                                </span>
+                                <p class="work__tags">
 
-                            <span class="nav__label">Say</span>
-                            <div class="sayhi">
-                                <span class="nav__hi">Hi!</span>
-                            </div>
-                        </a>
-=                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header> -->
+                                    Digital Branding, Social Media, B.I., Media Campaign, Integrated Campaign,
+                                    Responsive Site, Mobile App & System Development
+                                </p>
 
-    <!-- 
-    <main class="scroll-container main">
-
-
-        <section>
-
-            <div class="preloader">
-                <div class="loader_34">
-                    <div class="ytp-spinner">
-                        <div class="ytp-spinner-container">
-                            <div class="ytp-spinner-rotator">
-                                <div class="ytp-spinner-left">
-                                    <div class="ytp-spinner-circle"></div>
-                                </div>
-                                <div class="ytp-spinner-right">
-                                    <div class="ytp-spinner-circle"></div>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="work --shopping-recife">
+                <!-- <div class="work__bg"></div> -->
+                <!-- <div class="layer" data-depth="0.40">
+            <div class="work__obj --um"></div>
+        </div> -->
+                <!-- <div class="layer" data-depth="0.40">
+                    <div class="work__obj --bg"></div>
+                </div> -->
+                <!-- <div class="layer" data-depth="0.20">
+            <div class="work__obj --dois"></div>
+        </div> -->
+                <!-- <div class="layer visible-mobile" data-depth="0.20">
+                    <div class="work__obj --mobile"></div>
+                </div> -->
+                <div class="table">
+                    <div class="table__vAlign">
+                        <div class="container">
+                            <a href="https://www.cappen.com/work/shopping-recife" class="work__link link-page">
+                                <h2 class="work__title">Shopping Recife</h2><span class="icon-timer">
+                                    <svg>
+                                        <circle class="icon-timer__circle-animation" />
+                                    </svg>
+                                </span>
+                                <p class="work__tags">
 
+                                    Responsive Site, Extranet Development, Microsite
+                                </p>
 
-            <header class="header-area">
-                <div class="header-wrapper d-flex align-items-end align-items-lg-center">
-                    <div class="header-main d-flex align-items-center justify-content-center">
-                        <div class="header-content">
-                            <h2 class="name wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">Hi! I'm John
-                                Doe</h2>
-                            <span class="sub-title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">Software
-                                Engineer</span>
-                            <p class="text wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.7s">Lorem ipsum
-                                dolor sit amet, consectetur adipisicing elit. Harum, nisi ad ab, nemo ratione, id soluta
-                                aspernatur nulla minus sit magnam. Corporis ipsam eaque reprehenderi.</p>
-                            <a class="header-btn wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="2.2s" href="#"
-                                data-toggle="modal" data-target="#contact-modal">Get In Touch</a>
+                            </a>
                         </div>
                     </div>
-                    <div class="social d-sm-flex">
-                        <ul>
-                            <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                            <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                            <li><a href="#"><i class="lni-instagram-original"></i></a></li>
-                            <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
-                        </ul>
-                        <span class="follow">FOLLOW ME NOW!</span>
+                </div>
+            </div>
+            <div class="work --damas">
+
+                <div class="table">
+                    <div class="table__vAlign">
+                        <div class="container">
+                            <a href="https://www.cappen.com/work/damas" class="work__link link-page">
+                                <h2 class="work__title">Damas</h2><span class="icon-timer">
+                                    <svg>
+                                        <circle class="icon-timer__circle-animation" />
+                                    </svg>
+                                </span>
+                                <p class="work__tags">
+
+                                    Mobile App, Responsive Site, Microsite
+                                </p>
+
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </header>
-        </section>
-        
-    </main> -->
-    <div class="github">Hover over me.</div>
-    
-    <div class="hide">
-        <div class="calendar"></div>
+            </div>
+            <div class="work --richester">
+
+                <div class="table">
+                    <div class="table__vAlign">
+                        <div class="container">
+                            <a href="https://www.cappen.com/work/richester" class="work__link link-page">
+                                <h2 class="work__title">Richester</h2><span class="icon-timer">
+                                    <svg>
+                                        <circle class="icon-timer__circle-animation" />
+                                    </svg>
+                                </span>
+                                <p class="work__tags">
+
+                                    Digital Branding, Social Media, B.I., Media Campaign
+                                </p>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work --radio">
+
+                <div class="table">
+                    <div class="table__vAlign">
+                        <div class="container">
+                            <a href="https://www.cappen.com/work/radio-beach-park" class="work__link link-page">
+                                <h2 class="work__title">Rádio Beach Park</h2><span class="icon-timer">
+                                    <svg>
+                                        <circle class="icon-timer__circle-animation" />
+                                    </svg>
+                                </span>
+                                <p class="work__tags">
+
+                                    Digital Branding, Social Media, B.I., Media Campaign, Integrated Campaign
+                                </p>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work --lacta">
+
+                <div class="table">
+                    <div class="table__vAlign">
+                        <div class="container">
+                            <a href="https://www.cappen.com/work/lacta" class="work__link link-page">
+                                <h2 class="work__title">Lacta</h2> <span class="icon-timer">
+                                    <svg>
+                                        <circle class="icon-timer__circle-animation" />
+                                    </svg>
+                                </span>
+                                <p class="work__tags">
+
+                                    Webapp, Brand Activation, Media Campaign
+                                </p>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work --midiorama">
+
+                <div class="table">
+                    <div class="table__vAlign">
+                        <div class="container">
+                            <a href="https://www.cappen.com/work/midiorama" class="work__link link-page">
+                                <h2 class="work__title">Midiorama</h2><span class="icon-timer">
+                                    <svg>
+                                        <circle class="icon-timer__circle-animation" />
+                                    </svg>
+                                </span>
+                                <p class="work__tags">
+
+                                    Responsive Site
+                                </p>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work --santa-joana">
+
+                <div class="table">
+                    <div class="table__vAlign">
+                        <div class="container">
+                            <a href="https://www.cappen.com/work/santa-joana" class="work__link link-page">
+                                <h2 class="work__title">Santa Joana</h2><span class="icon-timer">
+                                    <svg>
+                                        <circle class="icon-timer__circle-animation" />
+                                    </svg>
+                                </span>
+                                <p class="work__tags">
+
+                                    Mobile App, Extranet Development, Responsive Site
+                                </p>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work --tang">
+
+                <div class="table">
+                    <div class="table__vAlign">
+                        <div class="container">
+                            <a href="https://www.cappen.com/work/tang" class="work__link link-page">
+                                <h2 class="work__title">Tang</h2><span class="icon-timer">
+                                    <svg>
+                                        <circle class="icon-timer__circle-animation" />
+                                    </svg>
+                                </span>
+                                <p class="work__tags">
+
+                                    Brand Activation
+                                </p>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work --vos">
+
+                <div class="table">
+                    <div class="table__vAlign">
+                        <div class="container">
+                            <a href="https://www.cappen.com/work/vos" class="work__link link-page">
+                                <h2 class="work__title">Vós</h2><span class="icon-timer">
+                                    <svg>
+                                        <circle class="icon-timer__circle-animation" />
+                                    </svg>
+                                </span>
+                                <p class="work__tags">
+
+                                    Responsive Site, Microsite, Social Media, B.I., Media Campaign, Integrated Campaign
+                                </p>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    
-    <footer>
-        <div class="social_icons">
-            <ul>
-                <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fab fa-github" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fab fa-google" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-            </ul>
-        </div>
-    </footer>
 
-    <script src="../js/fixed.js"></script>
     <script>
-        function myFunction(x) {
-            x.classList.toggle("change");
-        }
-        GitHubCalendar(".calendar", "nirbhaynaruka");
-        // or enable responsive functionality
-        GitHubCalendar(".calendar", "nirbhaynaruka", {
-            responsive: true,
-            tooltips: true
-        });
+        var idioma = 'en';
+        console.log(idioma);
+        var baseUrl = 'https://www.cappen.com/';
+        var wow;
     </script>
-    <!-- https://codepen.io/Laosing/pen/qdKpMz -->
-    <!-- https://codepen.io/elska-jo/pen/QKWkLA -->
+    <!-- fileblock:js js -->
+    <script src="https://www.cappen.com//scripts/vendor/modernizr.js"></script>
+    <script src="https://www.cappen.com//scripts/vendor.js"></script>
+    <script src="https://www.cappen.com//scripts/main.js"></script>
+    <script>
+        if (navigator.userAgent.indexOf('Mac') > 0)
+            $('body').addClass('mac-os');
+
+        $('.link-page').click(function () {
+            $('footer').hide();
+        })
+    </script>
+    <!-- endfileblock -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TB322GZ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8&appId=238269879600991";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 </body>
 
 </html>

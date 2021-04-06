@@ -1,0 +1,26 @@
+.back {
+    z-index: 100;
+    color: white;
+    font-weight: bold;
+    margin: 5%;
+    position: sticky;
+    float: left;
+}
+
+hr {
+    background-color: white;
+}
+
+a:hover {
+    color: white;
+    border: none;
+    text-decoration-line: none;
+}
+
+.work {
+    background-color: black !important;
+}
+
+.icon-timer {
+   
+}
