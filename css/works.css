@@ -5646,11 +5646,7 @@ p {
     background-color: inherit
 }
 
-.work.\--beach-park {
-    background-color: #008dde
-}
-
-.work.\--beach-park .work__obj.\--um {
+.work.\--srmdocker .work__obj.\--um {
     width: 574px;
     height: 389px;
     top: 50%;
@@ -5658,10 +5654,10 @@ p {
     margin-top: -165px;
     margin-left: -195px;
     display: block;
-    background: url('../img/works-home/beach-park/obj-01.jpg?1475765937') center no-repeat
+    background: url('../assets/srmdocker.png') center no-repeat
 }
 
-.work.\--beach-park .work__obj.\--dois {
+.work.\--srmdocker .work__obj.\--dois {
     width: 1091px;
     height: 442px;
     top: 100%;
@@ -5669,22 +5665,25 @@ p {
     margin-top: -342px;
     margin-left: -1150px;
     display: block;
-    background: url('../img/works-home/beach-park/obj-02.png?1475765937') center no-repeat
+    background: url('../assets/srmdocker.png') center no-repeat
 }
 
-.work.\--beach-park .work__obj.\--mobile {
-    background-image: url('../img/works-home/beach-park/obj-mobile-01.jpg?1480016000')
+.work.\--srmdocker .work__obj.\--mobile  {
+    background-size: 70% 50%;
+    margin-top: 18%;
+    background-image: url('../assets/srmdocker.png')
 }
 
-.work.\--beach-park .work__obj.\--bg {
-    background-image: url('../img/works-home/beach-park/bg.jpg?1479730690')
+.work.\--srmdocker .work__obj.\--bg  {
+    background-size: 27% 53%;
+    background-image: url('../assets/srmdocker.png')
 }
 
-.work.\--shopping-recife {
+.work.\--bakup {
     background-color: #851719
 }
 
-.work.\--shopping-recife .work__obj.\--um {
+.work.\--bakup .work__obj.\--um {
     width: 612px;
     height: 470px;
     top: 50%;
@@ -5692,10 +5691,10 @@ p {
     margin-top: -200px;
     margin-left: -270px;
     display: block;
-    background: url('../img/works-home/shopping-recife/obj-01.jpg?1475765937') center no-repeat
+    background: url('../assets/bakup.png') center no-repeat
 }
 
-.work.\--shopping-recife .work__obj.\--dois {
+.work.\--bakup .work__obj.\--dois {
     width: 649px;
     height: 788px;
     top: 100%;
@@ -5703,22 +5702,25 @@ p {
     margin-top: -349px;
     margin-left: -648px;
     display: block;
-    background: url('../img/works-home/shopping-recife/obj-02.png?1475765937') center no-repeat
+    background: url('../assets/bakup.png') center no-repeat
 }
 
-.work.\--shopping-recife .work__obj.\--mobile {
-    background-image: url('../img/works-home/shopping-recife/obj-mobile-01.jpg?1480016000')
+.work.\--bakup .work__obj.\--mobile  {
+    background-size: 70% 50%;
+    margin-top: 18%;
+    background-image: url('../assets/bakup.png')
 }
 
-.work.\--shopping-recife .work__obj.\--bg {
-    background-image: url('../img/works-home/shopping-recife/bg.jpg?1479730690')
+.work.\--bakup .work__obj.\--bg  {
+    background-size: 27% 53%;
+    background-image: url('../assets/bakup.png')
 }
 
-.work.\--damas {
+.work.\--todo {
     background-color: #00505f
 }
 
-.work.\--damas .work__obj.\--um {
+.work.\--todo .work__obj.\--um {
     width: 627px;
     height: 611px;
     top: 50%;
@@ -5726,10 +5728,10 @@ p {
     margin-top: -246px;
     margin-left: -282px;
     display: block;
-    background: url('../img/works-home/damas/obj-01.jpg?1475765937') center no-repeat
+    background: url('../assets/todo.png') center no-repeat
 }
 
-.work.\--damas .work__obj.\--dois {
+.work.\--todo .work__obj.\--dois {
     width: 972px;
     height: 320px;
     top: 100%;
@@ -5737,15 +5739,18 @@ p {
     margin-top: -220px;
     margin-left: -838px;
     display: block;
-    background: url('../img/works-home/damas/obj-02.png?1475765937') center no-repeat
+    background: url('../assets/todo.png') center no-repeat
 }
 
-.work.\--damas .work__obj.\--mobile {
-    background-image: url('../img/works-home/damas/obj-mobile-01.jpg?1480016000')
+.work.\--todo .work__obj.\--mobile  {
+    background-size: 70% 50%;
+    margin-top: 18%;
+    background-image: url('../assets/todo.png')
 }
 
-.work.\--damas .work__obj.\--bg {
-    background-image: url('../img/works-home/damas/bg.jpg?1479730690')
+.work.\--todo .work__obj.\--bg  {
+    background-size: 27% 53%;
+    background-image: url('../assets/todo.png')
 }
 
 .work.\--richester {
@@ -5760,7 +5765,7 @@ p {
     margin-top: -119px;
     margin-left: -191px;
     display: block;
-    background: url('../img/works-home/richester/obj-01.jpg?1475765937') center no-repeat
+    background: url('../assets/todo.png') center no-repeat
 }
 
 .work.\--richester .work__obj.\--dois {
@@ -5771,22 +5776,25 @@ p {
     margin-top: -260px;
     margin-left: -1106px;
     display: block;
-    background: url('../img/works-home/richester/obj-02.png?1475765937') center no-repeat
+    background: url('../assets/todo.png') center no-repeat
 }
 
-.work.\--richester .work__obj.\--mobile {
-    background-image: url('../img/works-home/richester/obj-mobile-01.jpg?1480016000')
+.work.\--richester .work__obj.\--mobile  {
+    background-size: 70% 50%;
+    margin-top: 18%;
+    background-image: url('../assets/todo.png')
 }
 
-.work.\--richester .work__obj.\--bg {
-    background-image: url('../img/works-home/richester/bg.jpg?1479730690')
+.work.\--richester .work__obj.\--bg  {
+    background-size: 27% 53%;
+    background-image: url('../assets/todo.png')
 }
 
-.work.\--radio {
+.work.\--stockmarket {
     background-color: #2c0e4d
 }
 
-.work.\--radio .work__obj.\--um {
+.work.\--stockmarket .work__obj.\--um {
     width: 1920px;
     height: 1152px;
     top: 50%;
@@ -5794,10 +5802,10 @@ p {
     margin-top: -576px;
     margin-left: -960px;
     display: block;
-    background: url('../img/works-home/radio/obj-01.jpg?1475765937') center no-repeat
+    background: url('../assets/stock.png') center no-repeat
 }
 
-.work.\--radio .work__obj.\--dois {
+.work.\--stockmarket .work__obj.\--dois {
     width: 829px;
     height: 580px;
     top: 100%;
@@ -5805,22 +5813,25 @@ p {
     margin-top: -478px;
     margin-left: -1012px;
     display: block;
-    background: url('../img/works-home/radio/obj-02.png?1475765937') center no-repeat
+    background: url('../assets/stock.png') center no-repeat
 }
 
-.work.\--radio .work__obj.\--mobile {
-    background-image: url('../img/works-home/radio/obj-mobile-01.jpg?1480016000')
+.work.\--stockmarket .work__obj.\--mobile  {
+    /* background-size: 70% 50%; */
+    margin-top: 18%;
+    background-image: url('../assets/stock.png')
 }
 
-.work.\--radio .work__obj.\--bg {
-    background-image: url('../img/works-home/radio/bg.jpg?1479730690')
+.work.\--stockmarket .work__obj.\--bg  {
+    background-size: 80% 70%;
+    background-image: url('../assets/stock.png')
 }
 
-.work.\--lacta {
+.work.\--ecommerce {
     background-color: #0063a9
 }
 
-.work.\--lacta .work__obj.\--um {
+.work.\--ecommerce .work__obj.\--um {
     width: 524px;
     height: 643px;
     top: 50%;
@@ -5828,10 +5839,10 @@ p {
     margin-top: -298px;
     margin-left: -162px;
     display: block;
-    background: url('../img/works-home/lacta/obj-01.jpg?1475765937') center no-repeat
+    background: url('../assets/grocery.png') center no-repeat
 }
 
-.work.\--lacta .work__obj.\--dois {
+.work.\--ecommerce .work__obj.\--dois {
     width: 742px;
     height: 340px;
     top: 100%;
@@ -5839,22 +5850,25 @@ p {
     margin-top: -240px;
     margin-left: -942px;
     display: block;
-    background: url('../img/works-home/lacta/obj-02.png?1475765937') center no-repeat
+    background: url('../assets/grocery.png') center no-repeat
 }
 
-.work.\--lacta .work__obj.\--mobile {
-    background-image: url('../img/works-home/lacta/obj-mobile-01.jpg?1480016000')
+.work.\--ecommerce .work__obj.\--mobile  {
+    background-size: 70% 50%;
+    margin-top: 18%;
+    background-image: url('../assets/grocery.png')
 }
 
-.work.\--lacta .work__obj.\--bg {
-    background-image: url('../img/works-home/lacta/bg.jpg?1479730690')
+.work.\--ecommerce .work__obj.\--bg  {
+    background-size: 27% 53%;
+    background-image: url('../assets/grocery.png')
 }
 
-.work.\--midiorama {
+.work.\--courseapp {
     background-color: #282980
 }
 
-.work.\--midiorama .work__obj.\--um {
+.work.\--courseapp .work__obj.\--um {
     width: 1366px;
     height: 1100px;
     top: 50%;
@@ -5862,10 +5876,10 @@ p {
     margin-top: -550px;
     margin-left: -683px;
     display: block;
-    background: url('../img/works-home/midiorama/obj-01.jpg?1475765937') center no-repeat
+    background: url('../assets/courseapp.png') center no-repeat
 }
 
-.work.\--midiorama .work__obj.\--dois {
+.work.\--courseapp .work__obj.\--dois {
     width: 624px;
     height: 333px;
     top: 100%;
@@ -5873,22 +5887,25 @@ p {
     margin-top: -233px;
     margin-left: -942px;
     display: block;
-    background: url('../img/works-home/midiorama/obj-02.png?1475765937') center no-repeat
+    background: url('../assets/courseapp.png') center no-repeat
 }
 
-.work.\--midiorama .work__obj.\--mobile {
-    background-image: url('../img/works-home/midiorama/obj-mobile-01.jpg?1480016000')
+.work.\--courseapp .work__obj.\--mobile  {
+    background-size: 70% 50%;
+    margin-top: 18%;
+    background-image: url('../assets/courseapp.png')
 }
 
-.work.\--midiorama .work__obj.\--bg {
-    background-image: url('../img/works-home/midiorama/bg.jpg?1479730690')
+.work.\--courseapp .work__obj.\--bg  {
+    background-size: 27% 53%;
+    background-image: url('../assets/courseapp.png')
 }
 
-.work.\--santa-joana {
+.work.\--careindia {
     background-color: #1b8ac4
 }
 
-.work.\--santa-joana .work__obj.\--um {
+.work.\--careindia .work__obj.\--um {
     width: 398px;
     height: 642px;
     top: 50%;
@@ -5896,10 +5913,10 @@ p {
     margin-top: -305px;
     margin-left: -124px;
     display: block;
-    background: url('../img/works-home/santa-joana/obj-01.jpg?1475765937') center no-repeat
+    background: url('../assets/careindia.png') center no-repeat
 }
 
-.work.\--santa-joana .work__obj.\--dois {
+.work.\--careindia .work__obj.\--dois {
     width: 868px;
     height: 507px;
     top: 100%;
@@ -5907,22 +5924,25 @@ p {
     margin-top: -507px;
     margin-left: -1048px;
     display: block;
-    background: url('../img/works-home/santa-joana/obj-02.png?1475765937') center no-repeat
+    background: url('../assets/careindia.png') center no-repeat
 }
 
-.work.\--santa-joana .work__obj.\--mobile {
-    background-image: url('../img/works-home/santa-joana/obj-mobile-01.jpg?1480016000')
+.work.\--careindia .work__obj.\--mobile  {
+    background-size: 70% 50%;
+    margin-top: 18%;
+    background-image: url('../assets/careindia.png')
 }
 
-.work.\--santa-joana .work__obj.\--bg {
-    background-image: url('../img/works-home/santa-joana/bg.jpg?1479730690')
+.work.\--careindia .work__obj.\--bg  {
+    background-size: 27% 53%;
+    background-image: url('../assets/careindia.png')
 }
 
-.work.\--tang {
+.work.\--carrentalapp {
     background-color: #bb5724
 }
 
-.work.\--tang .work__obj.\--um {
+.work.\--carrentalapp .work__obj.\--um {
     width: 476px;
     height: 686px;
     top: 50%;
@@ -5930,10 +5950,10 @@ p {
     margin-top: -321px;
     margin-left: -197px;
     display: block;
-    background: url('../img/works-home/tang/obj-01.jpg?1475765937') center no-repeat
+    background: url('../assets/carrental.png') center no-repeat
 }
 
-.work.\--tang .work__obj.\--dois {
+.work.\--carrentalapp .work__obj.\--dois {
     width: 986px;
     height: 945px;
     top: 100%;
@@ -5941,22 +5961,25 @@ p {
     margin-top: -845px;
     margin-left: -986px;
     display: block;
-    background: url('../img/works-home/tang/obj-02.png?1475765937') center no-repeat
+    background: url('../assets/carrental.png') center no-repeat
 }
 
-.work.\--tang .work__obj.\--mobile {
-    background-image: url('../img/works-home/tang/obj-mobile-01.jpg?1480016000')
+.work.\--carrentalapp .work__obj.\--mobile  {
+    background-size: 70% 50%;
+    margin-top: 18%;
+    background-image: url('../assets/carrental.png')
 }
 
-.work.\--tang .work__obj.\--bg {
-    background-image: url('../img/works-home/tang/bg.jpg?1479730690')
+.work.\--carrentalapp .work__obj.\--bg  {
+    background-size: 27% 53%;
+    background-image: url('../assets/carrental.png')
 }
 
-.work.\--vos {
+.work.\--carrentalweb {
     background-color: #96763b
 }
 
-.work.\--vos .work__obj.\--um {
+.work.\--carrentalweb .work__obj.\--um {
     width: 548px;
     height: 637px;
     top: 50%;
@@ -5964,10 +5987,10 @@ p {
     margin-top: -310px;
     margin-left: -235px;
     display: block;
-    background: url('../img/works-home/vos/obj-01.jpg?1475765937') center no-repeat
+    background: url('../assets/carrental.png') center no-repeat
 }
 
-.work.\--vos .work__obj.\--dois {
+.work.\--carrentalweb .work__obj.\--dois {
     width: 957px;
     height: 449px;
     top: 100%;
@@ -5975,15 +5998,18 @@ p {
     margin-top: -349px;
     margin-left: -957px;
     display: block;
-    background: url('../img/works-home/vos/obj-02.png?1475765937') center no-repeat
+    background: url('../assets/carrental.png') center no-repeat
 }
 
-.work.\--vos .work__obj.\--mobile {
-    background-image: url('../img/works-home/vos/obj-mobile-01.jpg?1480016000')
+.work.\--carrentalweb .work__obj.\--mobile  {
+    background-size: 70% 50%;
+    margin-top: 18%;
+    background-image: url('../assets/carrental.png')
 }
 
-.work.\--vos .work__obj.\--bg {
-    background-image: url('../img/works-home/vos/bg.jpg?1479730690')
+.work.\--carrentalweb .work__obj.\--bg  {
+    background-size: 27% 53%;
+    background-image: url('../assets/carrental.png')
 }
 
 @media (min-width: 0) and (max-width: 767px) {
@@ -9898,8 +9924,9 @@ p {
 
 .service__subtitle {
     font-size: 20px;
-    color: #ff0042margin:0 0 15px;
-    opacity: 0
+    color: #ff0042;
+    margin:0 0 15px;
+    opacity: 0;
 }
 
 .service__subtitle.animated {
@@ -11560,4 +11587,28 @@ p {
     .mac-os .title-destaque__text:after {
         bottom: 2px;
     }
+}
+.back {
+    z-index: 100;
+    color: white;
+    font-weight: bold;
+    margin: 5%;
+    position: sticky;
+    float: left;
+}
+.backa:hover{
+    color: white;
+}
+hr {
+    background-color: white;
+}
+
+a:hover {
+    color: transparent;
+    border: none;
+    text-decoration-line: none;
+}
+
+.work {
+    background-color: black !important;
 }
