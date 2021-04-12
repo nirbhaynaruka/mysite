@@ -13,7 +13,7 @@
     max-width: 100%; }
   
   [data-theme] {
-    background-color: var(--color-bg, white);
+    /* background-color: var(--color-bg, white); */
     color: var(--color-contrast-high, #313135); }
   
   :root {
@@ -170,6 +170,7 @@
             transform-origin: center top;
     overflow: hidden; }
     .stack-cards__item > * {
+      border-radius: 12px 12px 0 0;
         background-color: black;
         border-style: solid;
         border-color: white;
@@ -185,4 +186,5 @@
     .text-component.padding-md{
         margin-top: 50%;
         text-align: center;
+        color: white;
     }

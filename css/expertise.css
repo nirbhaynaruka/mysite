@@ -18,17 +18,20 @@ a:hover {
 }
 
 
-.scroll{
+.scroll {
     position: relative;
 }
-.first{
+
+.first {
     height: inherit;
 }
-.demo{
+
+.demo {
     text-align: center;
     margin-top: 2%;
     color: white;
 }
+
 #section10 a {
     padding-top: 60px;
 }
@@ -98,4 +101,152 @@ a:hover {
     100% {
         opacity: 0;
     }
+}
+
+
+.contact {
+    margin: auto;
+    display: block;
+    height: inherit;
+    position: relative;
+}
+
+.sayhii {
+    /* display: flex; */
+    position: absolute;
+    top: 38%;
+    left: 38%;
+
+}
+
+h4 {
+    text-align: center;
+    padding: 5%;
+    color: white;
+}
+
+input[type=text] {
+    width: 100%;
+    /* padding: 12px 20px;
+    margin: 8px 0; */
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    margin: 15% 0 15% 0;
+
+}
+
+.textfield {
+    display: flex;
+    text-align: center;
+}
+
+input[type=reset] {
+    text-align: center;
+    border: white;
+    outline: none;
+    color: white;
+    background-color: transparent;
+}
+
+svg.animation-test {
+    position: absolute;
+    width: max-content;
+    height: -webkit-fill-available;
+    margin-top: -40%;
+}
+
+button {
+    background-color: black;
+    color: white;
+    outline: none;
+    border: black;
+}
+
+
+
+p {
+    color: white;
+    border-top: 2px dashed;
+    border-color: white !important;
+    margin: 0;
+    padding: 10px;
+    counter-increment: section;
+    position: relative;
+}
+
+
+
+p:nth-child(even):before {
+    content: counter(section);
+    right: 96%;
+    margin-right: -20px;
+    position: absolute;
+    border-radius: 50%;
+    /* padding: 10px; */
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    text-align: center;
+    color: black;
+    font-size: 110%;
+}
+
+p:nth-child(odd):before {
+    content: counter(section);
+    left: 96%;
+    margin-left: -20px;
+    position: absolute;
+    border-radius: 50%;
+    /* padding: 5px; */
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    text-align: center;
+    color: black;
+    font-size: 110%;
+}
+
+
+
+p:nth-child(even) {
+    border-left: 2px dashed;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-right: 30px;
+    padding-right: 0;
+    padding-left: 12%;
+}
+
+p:nth-child(odd) {
+    border-right: 2px dashed;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-left: 30px;
+    padding-left: 0;
+}
+
+p:first-child {
+    border-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+p:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.skills {
+    padding-top: 4%;
+}
+
+.contact {
+    background-attachment: fixed;
+    background-image: url("../assets/bgg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
