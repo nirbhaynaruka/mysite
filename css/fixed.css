@@ -13,6 +13,9 @@ body {
   display: block;
   box-sizing: border-box;
   background-color: black;
+  /* background-image: url("../assets/wordcloud.png");
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 ::-webkit-scrollbar {

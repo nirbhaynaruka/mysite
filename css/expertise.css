@@ -246,7 +246,50 @@ p:last-child {
 
 .contact {
     background-attachment: fixed;
-    background-image: url("../assets/bgg.jpg");
+    /* background-image: url("../assets/bgg.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+svg#freepik_stories-dark-alley{
+    width: fit-content;
+    float: right;
+    margin-top: 37%;
+}
+.colimage{
+    display: block;
+    margin: auto;
+}
+svg#freepik_stories-dark-alley:not(.animated) .animable {
+    opacity: 0;
+}
+
+svg#freepik_stories-dark-alley.animated #freepik--background-complete--inject-50 {
+    animation: 1.5s Infinite linear floating;
+    animation-delay: 0s;
+}
+
+svg#freepik_stories-dark-alley.animated #freepik--Shadow--inject-50 {
+    animation: 1.5s Infinite linear floating;
+    animation-delay: 0s;
+}
+
+@keyframes floating {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.animator-hidden {
+    display: none;
 }
