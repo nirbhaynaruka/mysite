@@ -1,5 +1,6 @@
 a {
-    color: white !important;
+    /* color: white !important; */
+    color: #00aced !important;
 }
 
 ul {
@@ -271,7 +272,7 @@ img {
 
 }
 .text p{
-    color: #888484;
+    color: white;
 }
 .text {
     margin-top: auto;

@@ -8,6 +8,7 @@ body {
   padding: 0;
   /*space from content and border*/
   border: solid #292828;
+  border-color: linear-gradient(to right, red, blue) !important;
   border-width: 15px; /*thick*/
   overflow: auto;
   display: block;
