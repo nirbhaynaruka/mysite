@@ -7,16 +7,23 @@ body {
   /* Space from this element (entire page) and others*/
   padding: 0;
   /*space from content and border*/
-  border: solid #292828;
-  border-color: linear-gradient(to right, red, blue) !important;
+  /* border: solid #E7DFCD; */
+  border: solid #E7DFCD;
+
+  /* border-color: linear-gradient(to right, red, blue) !important; */
   border-width: 15px; /*thick*/
   overflow: auto;
   display: block;
   box-sizing: border-box;
-  background-color: black;
+  /* background: linear-gradient(to bottom, #4ca1af, #2c3e50); /* This sets the gradient background */
+  /* background-color: #06141F; */
+  background-color:   #1F2125;
   /* background-image: url("../assets/wordcloud.png");
   background-repeat: no-repeat;
   background-size: cover; */
+  border: 10px solid transparent; /* Set a transparent border */
+  border-image: linear-gradient(#1F2125,#E7DFCD ) 1; /* Replace with your gradient colors */
+
 }
 
 ::-webkit-scrollbar {
@@ -34,138 +41,7 @@ body {
   box-shadow: inset 0 0 5px #292828;
   background-color: #292828;
 }
+.navbar, a{
 
-.nav_tog {
-  display: inline-block;
-  cursor: pointer;
-}
-
-.bar1 {
-  width: 12px;
-  height: 4px;
-  background-color: #333;
-  margin: 4px 0;
-  transition: 0.4s;
-}
-
-.bar2 {
-  width: 25px;
-  height: 4px;
-  background-color: #333;
-  margin: 4px 0;
-  transition: 0.4s;
-}
-
-.bar3 {
-  width: 12px;
-  height: 4px;
-  background-color: #333;
-  margin: 4px 13px;
-  transition: 0.4s;
-}
-
-.navbar-brand {
-  width: 50%;
-}
-
-.change .bar1 {
-  width: 25px;
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {
-  opacity: 0;
-}
-
-.change .bar3 {
-  width: 25px;
-  margin: 4px 0;
-
-  -webkit-transform: rotate(45deg) translate(-18px, -8px);
-  transform: rotate(45deg) translate(-5px, -5px);
-}
-
-.centernav {
-  place-content: space-around !important;
-}
-
-.navtext a {
-  font-weight: bold;
-  color: white;
-}
-
-a.navbar-brand {
-  text-align: center;
-}
-
-.li.nav-item {
-  padding-right: 2rem;
-  ;
-}
-
-.nav__label {
-  position: relative;
-  z-index: 10;
-  display: block;
-  padding-left: calc((100vw - var(--paddingH) * 2 - 5 * var(--grid-gap))/ 6 + var(--paddingH) + var(--grid-gap));
-  /* font-size: 36px;
-  letter-spacing: .3px;
-  font-weight: 500; */
-}
-
-.nav__hi {
-  position: absolute;
-  left: calc(((100vw - var(--paddingH) * 2 - 5 * var(--grid-gap))/ 6) * 2.2 + var(--paddingH) + var(--grid-gap));
-  bottom: 30px;
-  padding: 4px 11px;
-  color: #2c2c2c;
-  /* font-size: 18px;
-  font-weight: 600; */
-  line-height: 1;
-  border-radius: 20px;
-  background-color: #e27d60;
-  transform: translateY(0);
-  transition: transform 250ms cubic-bezier(.23, 1, .32, 1);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.sayhi:before {
-  --ty: 0px;
-  content: '';
-  position: absolute;
-  left: calc(((100vw - var(--paddingH) * 2 - 5 * var(--grid-gap))/ 6) * 2.2 + var(--paddingH) + var(--grid-gap) + 10px);
-  bottom: 30px;
-  width: 10px;
-  height: 10px;
-  background-color: #c3b7ab;
-  transform: translate3d(0, var(--ty, 0), 0) skewY(-45deg) rotate(10deg);
-  border-radius: 0;
-  border: none;
-  transition: transform 250ms cubic-bezier(.23, 1, .32, 1);
-}
-
-.sayhi {
-  padding-left: 1.5rem;
-}
-button:focus {
-  outline: none;
-}
-
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-.se-pre-con {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: #292828;
-  z-index: 9999;
-  /* background: url(fixed.css) center no-repeat black; */
-  background-image: url(../assets/loader.gif);
-  background-repeat: no-repeat;
-  background-size: 20%;
-  background-position: center;
+  color: #E7DFCD !important;
 }

@@ -1,0 +1,298 @@
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    text-align: center;
+    /* margin: 15% 0 15% 0; */
+    padding: 2%;
+}
+p, span {
+    color: white;
+    text-align: center;
+
+}
+.textfield {
+    display: flex;
+    text-align: center;
+}
+
+input[type=reset] {
+    text-align: center;
+    border: white;
+    outline: none;
+    color: white;
+    background-color: transparent;
+}
+
+  .header {
+    font-size: 24px; 
+    margin-bottom: 20px;
+  }
+  .main-text {
+    text-align: center;
+    font-size: 40px; 
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  .sub-text {
+    font-size: 32px; 
+    font-style: italic;
+  }
+
+  .form-group {
+  position: relative;
+}
+
+.placeholder-label {
+  position: absolute;
+  right: 10px; /* Adjust as needed */
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 20px; /* Adjust as needed */
+  line-height: 20px; /* Adjust as needed */
+  color: #aaa; /* Placeholder text color */
+  pointer-events: none;
+}
+#contactForm{
+  font-size: 50%; /* Adjust as needed */
+  
+}
+.form-group {
+    display: flex;
+    align-items: center;
+}
+
+.form-group i {
+    margin-right: 10px; /* Adjust spacing as needed */
+}
+
+.form-group input[type="reset"] {
+    margin-left: 10px; /* Adjust spacing as needed */
+}
+
+@keyframes flutterFromLeft {
+  0% { transform: translate(-100vw, 0) rotate(0deg); opacity: 0; }
+  25% { transform: translateX(-75vw) rotate(20deg); }
+  50% { transform: translateX(-50vw) rotate(-20deg); }
+  75% { transform: translateX(-25vw) rotate(10deg); }
+  100% { transform: translate(0, 0) rotate(0deg); opacity: 1; }
+}
+
+.left {
+  animation: flutterFromLeft 3s ease-out;
+}
+
+.sec1, .sec2{
+    height: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+.social-menu {
+    text-align: center;
+    
+
+}
+.margin{
+    margin-left: -5%;
+    margin-top: -5%;
+}
+input[type=checkbox], input[type=radio]{
+    opacity: 0;
+}
+  .menu-item, .social-menu-open-button {
+      background: #fff;
+      border-radius: 100%;
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      line-height: 80px;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      -webkit-transition: -webkit-transform ease-out 200ms;
+      transition: -webkit-transform ease-out 200ms;
+      transition: transform ease-out 200ms;
+      transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+      text-align: center;
+      color: transparent;
+  }
+  
+
+  .line {
+    
+     background: transparent;
+
+     margin-left: -12.5px;
+     margin-top: -1.5px;
+     -webkit-transition: -webkit-transform 200ms;
+     transition: -webkit-transform 200ms;
+     transition: transform 200ms;
+     transition: transform 200ms, -webkit-transform 200ms;
+  }
+  /*It is these transformations that make the lines stacked*/
+
+  /*Describes the transformation of the top line*/
+  .social-menu-open + .social-menu-open-button .line-1 {
+     -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+     transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+  /*describes the transformation of the middle line*/
+  .social-menu-open + .social-menu-open-button .line-2 {
+     -webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);
+     transform: translate3d(0, 0, 0) scale(0.1, 1);
+  }
+  /*describes the transformation of the top line*/
+  .social-menu-open + .social-menu-open-button .line-3 {
+     -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+     transform: translate3d(0, 0, 0) rotate(-45deg);
+  }
+ 
+  .social-menu-open-button {
+    z-index: 2;
+      transition-duration: 400ms;
+      transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+      cursor: pointer;
+      box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+  }
+  
+  .social-menu-open-button:hover {
+      -webkit-transform:scale(1.2, 1.2) translate3d(0,0,0);
+      transform: scale(1.2, 1.2) translate(0,0,0);
+  }
+  
+  .social-menu-open:checked + .social-menu-open-button{
+      transition-timing-function: linear;
+      transition-duration: 200ms;
+      transform: scale(0.8, 0.8) translate3d(0,0,0);
+  }
+  
+  .social-menu-open:checked ~ .menu-item { /* the x ~ y selectors selects every y that is preceeded by an x*/
+      transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+  }
+  
+  /*Describes the bubble transition*/
+  .social-menu-open:checked ~ .menu-item:nth-child(3) { /* :nth(n) selector matches every nth child of its parent*/
+      transition-duration: 180ms;
+      transform: translate3d(0, -100px, 0);
+  }
+  
+  .social-menu-open:checked ~ .menu-item:nth-child(4) {
+     transition-duration: 280ms;
+     transform: translate3d(90px, -50px, 0);
+  }
+  
+  .social-menu-open:checked ~ .menu-item:nth-child(5) {
+     transition-duration: 380ms;
+     transform: translate3d(90px, 50px, 0);
+  }
+  
+  .social-menu-open:checked ~ .menu-item:nth-child(6) {
+     transition-duration: 480ms;
+     transform: translate3d(0, 100px, 0);
+  }
+  
+  .social-menu-open:checked ~ .menu-item:nth-child(7) {
+     transition-duration: 580ms;
+     transform: translate3d(-90px, 50px, 0);
+  }
+  
+  .social-menu-open:checked ~ .menu-item:nth-child(8) {
+     transition-duration: 680ms;
+     transform: translate3d(-90px, -50px, 0);
+  }
+  
+  
+  .linkedin {
+     background-color: #0a66c2;
+     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .linkedin:hover {
+     color: #0a66c2;
+     text-shadow: none;
+  }
+  
+  .file {
+     background-color: #1da1f2;
+     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .file:hover {
+     color: #1da1f2;
+     text-shadow: none;
+  }
+  
+  .github {
+     background-color: #333;
+     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .github:hover {
+     color: #333;
+     text-shadow: none;
+  }
+  
+  .whatsapp {
+     background-color: #25d366;
+     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .whatsapp:hover {
+     color: #25d366;
+     text-shadow: none;
+  }
+  
+  .envelope {
+     background-color: #d44638;
+     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .envelope:hover {
+     color: #d44638;
+     text-shadow: none;
+  }
+  
+  .phone {
+     background-color: green;
+     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .phone:hover {
+     color: green;
+     text-shadow: none;
+  }
+
+#arrow {
+  position: absolute;
+  color: green !important;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes glow {
+    0%, 100% {
+      box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #E7DFCD, 0 0 20px #E7DFCD, 0 0 25px #E7DFCD, 0 0 30px #E7DFCD, 0 0 35px #E7DFCD;
+    }
+    50% {
+      box-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #E7DFCD, 0 0 8px #E7DFCD, 0 0 10px #E7DFCD, 0 0 12px #E7DFCD, 0 0 14px #E7DFCD;
+    }
+  }
+  
+  .social-menu-open-button {
+    animation: glow 2s ease-in-out infinite;
+  }
+  

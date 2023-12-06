@@ -1,16 +1,8 @@
-html {
-    font-size: 100%;
-    line-height: 1.5em
+.blend{
+    mix-blend-mode: plus-lighter;
 }
-
-html {
-    font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
-}
-
-body {
-    margin: 0
+a,p,h1,h2, span{
+   color: #E7DFCD !important;
 }
 
 article,
@@ -33,8 +25,8 @@ canvas,
 progress,
 video {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    display: inline;
+    zoom: 1;
     vertical-align: baseline
 }
 
@@ -216,8 +208,8 @@ textarea {
     color: inherit;
     font: inherit;
     margin: 0;
-    *font-family: sans-serif;
-    *vertical-align: middle
+    font-family: sans-serif;
+    vertical-align: middle
 }
 
 button {
@@ -235,7 +227,7 @@ input[type="reset"],
 input[type="submit"] {
     -webkit-appearance: button;
     cursor: pointer;
-    *overflow: visible
+    overflow: visible
 }
 
 button[disabled],
@@ -259,8 +251,8 @@ input[type="radio"] {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
-    *height: 13px;
-    *width: 13px
+    height: 13px;
+    width: 13px
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -300,7 +292,7 @@ fieldset {
 legend {
     border: 0;
     padding: 0;
-    *margin-left: -7px
+    margin-left: -7px
 }
 
 textarea {
@@ -3448,19 +3440,6 @@ th {
     font-weight: true
 }
 
-* {
-    font-family: 'Rubik', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    outline: none
-}
-
-body,
-html {
-    height: 100%;
-    background-color: #f3f3f3;
-    overflow-x: hidden
-}
 
 ul {
     padding: 0;
@@ -11592,7 +11571,7 @@ p {
     z-index: 100;
     color: white;
     font-weight: bold;
-    margin: 5%;
+    margin: 2%;
     position: sticky;
     float: left;
 }
