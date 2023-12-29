@@ -2,7 +2,9 @@ p,span,li,h2,h3,h1,h4{
     color: #E7DFCD;
     font-size: medium !important;
 }
-
+.col-md{
+  text-align: center;
+}
 .CV-page {
   max-width: 90%;
   margin: 0 auto;
@@ -27,6 +29,7 @@ p,span,li,h2,h3,h1,h4{
   position: relative;
   margin: 2em 0 0;
   text-transform: uppercase;
+  z-index: 1;
 }
 /* Grid
 ****************************************************/
@@ -41,9 +44,9 @@ p,span,li,h2,h3,h1,h4{
 
 .CV-timeline {
   position: relative;
-  margin: 0 0 0 0.5em;
+  /* margin: 0 0 0 0.5em;
   padding-left: 1.5em;
-  border-left: solid 1px #E7DFCD;
+  border-left: solid 1px #E7DFCD; */
 }
 
 .CV-timeline:first-of-type {
@@ -62,9 +65,7 @@ p,span,li,h2,h3,h1,h4{
   display: block;
   width: 1em;
   height: 1em;
-  border: solid 1px #E7DFCD;
-  background-color: #ffffff;
-  border-radius: 50%;
+  
 }
 
 .CV-timeline-heading {
@@ -98,11 +99,288 @@ p,span,li,h2,h3,h1,h4{
   display: block;
   margin: 0;
   padding-bottom: 2em;
-  padding: 0 0 2em 1em;
+  padding: 0 0 2em 3em;
   list-style:circle;
 }
 
-.CV-timeline-details-item {
+/* .CV-timeline-details-item {
   margin-bottom: 0.5em;
   
+} */
+
+
+
+
+.CV-job-entry {
+  display: flex;
+  align-items: start; /* Aligns items to the top */
+  margin-bottom: 20px; /* Adds space between job entries */
+  align-items: center;
+}
+
+.company_logo {
+  width: 6%; /* Adjust width as necessary */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 2%; /* Adds some space between the logo and the text */
+}
+.company_logo1{
+  width: 3.5%;
+}
+.CV-job-description {
+  flex-grow: 1; /* Ensures the description takes the remaining space */
+}
+
+.CV-timeline-heading {
+  margin: 0;
+  padding: 0;
+  /* Add any additional styling for the heading */
+}
+
+.CV-timeline-details {
+  /* Add any additional styling for the details list */
+}
+/* .gallery-container a {
+  width: 240px;
+  margin: 5px;
+}
+
+.gallery-container a img {
+  max-width: 100%;
+  height: auto;
+} */
+
+a.lightbox img {
+  height: 150px;
+  border: 3px solid white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin: 1rem;
+}
+
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+
+.lightbox-target {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.lightbox-target img {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 0%;
+  max-width: 0%;
+  border: 3px solid white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  transition: 0.5s ease-in-out;
+}
+
+/* Styles the close link, adds the slide down transition */
+
+a.lightbox-close {
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: none;
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 0.5s ease-in-out;
+}
+
+/* Provides the "/" part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:before {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background-color: white;
+  position: absolute;
+  right: 26px;
+  top: 10px;
+  transform: rotate(45deg);
+}
+
+/* Provides the "\" part of the "X" to eliminate an image from the close link */
+a.lightbox-close:after {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background-color: white;
+  position: absolute;
+  right: 26px;
+  top: 10px;
+  transform: rotate(-45deg);
+}
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+.lightbox-target:target {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.lightbox-target:target img {
+  max-height: 70%;
+  max-width: 70%;
+}
+
+.lightbox-target:target a.lightbox-close {
+  top: 0px;
+}
+
+.experience{
+ text-align: center;
+ 
+}
+.experience p{
+  font-size: 2rem !important;
+  
+}
+
+
+
+:root {
+	/* Theme */
+	--primary-color: #1662f3;
+	--light-color: #d0dffc;
+	--dark-color: #283b70;
+	--regular-font: 'Inter', sans-serif;
+}
+
+
+.tags {
+  flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	gap: 1rem;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tag {
+	--color: var(--light-color);
+	font-family: var(--regular-font);
+	font-size: 1rem;
+	border-radius: 100rem;
+	box-shadow: 0 0 0 2px var(--light-color);
+	background-color: transparent;
+	color: var(--dark-color);
+	font-weight: bold;
+	transition:
+		background-color 250ms ease,
+		box-shadow 250ms ease;
+}
+
+.tag>a {
+	display: inline-block;
+	position: relative;
+	color: var(--dark-color);
+	text-decoration: none;
+	padding: .5rem 1rem .5rem 2rem;
+}
+
+.tag>a::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 1rem;
+	width: .5rem;
+	height: .5rem;
+	border-radius: 100%;
+	background-color: var(--color);
+	transform: translateY(-50%);
+}
+
+.tag:hover {
+	background-color: var(--light-color);
+	box-shadow: 0 0 0 calc(2px + .25rem) var(--light-color);
+}
+
+.row p{
+  /* color: red !important; */
+  padding: 0 0 2% 0;
+  
+}
+.row{
+  align-items: center;
+  text-align: center;
+  margin: 0px 0 5% 0;
+}
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+
+
+
+
+.line {
+  width: 100px;
+  height: 2px;
+  background: #fff;
+ align-items: center;
+ left: 50%;
+}
+
+#line_r{
+-webkit-animation: line_r_animation 3s infinite;
+animation: line_r_animation 3s infinite;
+}
+
+#line_l{
+-webkit-animation: line_l_animation 3s infinite;
+animation: line_l_animation 3s infinite;
+}
+
+@-webkit-keyframes line_l_animation {
+  0%   {left: calc(2% + 50px); width: 0px;}
+  35%   {left: calc(2% + 0px); width: 50px;}
+  70%   {left: calc(2% + 0px); width: 0px;}
+  100%   {left: calc(2% + 0px); width: 0px;}
+}
+
+@keyframes line_r_animation {
+  0%   {left: calc(2% + 50px); width: 0px;}
+  35%   {left: calc(2% + 0px); width: 50px;}
+  70%   {left: calc(2% + 0px); width: 0px;}
+  100%   {left: calc(2% + 0px); width: 0px;}
+}
+
+@-webkit-keyframes line_r_animation {
+  0%   {right: calc(2% + 50px); width: 0px;}
+  35%   {right: calc(2% + 0px); width: 50px;}
+  70%   {right: calc(2% + 0px); width: 0px;}
+  100%   {right: calc(2% + 0px); width: 0px;}
+}
+
+@keyframes line_r_animation {
+  0%   {right: calc(2% + 50px); width: 0px;}
+  35%   {right: calc(2% + 0px); width: 50px;}
+  70%   {right: calc(2% + 0px); width: 0px;}
+  100%   {right: calc(2% + 0px); width: 0px;}
 }

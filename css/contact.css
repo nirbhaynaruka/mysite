@@ -285,10 +285,10 @@ input[type=checkbox], input[type=radio]{
 
 @keyframes glow {
     0%, 100% {
-      box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #E7DFCD, 0 0 20px #E7DFCD, 0 0 25px #E7DFCD, 0 0 30px #E7DFCD, 0 0 35px #E7DFCD;
+      box-shadow: 0 0 5px #171719, 0 0 10px #E7DFCD, 0 0 15px #E7DFCD, 0 0 20px #E7DFCD, 0 0 25px #E7DFCD, 0 0 30px #E7DFCD, 0 0 35px #E7DFCD;
     }
     50% {
-      box-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #E7DFCD, 0 0 8px #E7DFCD, 0 0 10px #E7DFCD, 0 0 12px #E7DFCD, 0 0 14px #E7DFCD;
+      box-shadow: 0 0 2px #171719, 0 0 4px #E7DFCD, 0 0 6px #E7DFCD, 0 0 8px #E7DFCD, 0 0 10px #E7DFCD, 0 0 12px #E7DFCD, 0 0 14px #E7DFCD;
     }
   }
   

@@ -613,10 +613,10 @@ img {
     top: 0px;
     width: 100%;
     height: 100%;
-    background-color: #292828;
+    background-color: #E7DFCD;
     z-index: 9999;
     /* background: url(fixed.css) center no-repeat black; */
-    background-image: url(../assets/loader.gif);
+    background-image: url(../assets/cattt.gif);
     background-repeat: no-repeat;
     background-size: 20%;
     background-position: center;
