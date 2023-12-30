@@ -256,11 +256,8 @@ a.lightbox-close:after {
 
 
 :root {
-	/* Theme */
-	--primary-color: #1662f3;
-	--light-color: #d0dffc;
-	--dark-color: #283b70;
-	--regular-font: 'Inter', sans-serif;
+	--light-color: #E7DFCD;
+	/* --regular-font: 'Inter', sans-serif; */
 }
 
 
@@ -295,24 +292,7 @@ a.lightbox-close:after {
 	position: relative;
 	color: var(--dark-color);
 	text-decoration: none;
-	padding: .5rem 1rem .5rem 2rem;
-}
-
-.tag>a::before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 1rem;
-	width: .5rem;
-	height: .5rem;
-	border-radius: 100%;
-	background-color: var(--color);
-	transform: translateY(-50%);
-}
-
-.tag:hover {
-	background-color: var(--light-color);
-	box-shadow: 0 0 0 calc(2px + .25rem) var(--light-color);
+	padding: .5rem 1rem .5rem 1rem;
 }
 
 .row p{
@@ -340,11 +320,11 @@ hr {
 
 
 .line {
-  width: 100px;
+  width: 5%;
   height: 2px;
-  background: #fff;
+  background: #E7DFCD;
  align-items: center;
- left: 50%;
+ margin-left: 47.5%;
 }
 
 #line_r{
@@ -359,28 +339,60 @@ animation: line_l_animation 3s infinite;
 
 @-webkit-keyframes line_l_animation {
   0%   {left: calc(2% + 50px); width: 0px;}
-  35%   {left: calc(2% + 0px); width: 50px;}
+  35%   {left: calc(2% + 0px); width: 5%;}
   70%   {left: calc(2% + 0px); width: 0px;}
   100%   {left: calc(2% + 0px); width: 0px;}
 }
 
 @keyframes line_r_animation {
   0%   {left: calc(2% + 50px); width: 0px;}
-  35%   {left: calc(2% + 0px); width: 50px;}
+  35%   {left: calc(2% + 0px); width: 5%;}
   70%   {left: calc(2% + 0px); width: 0px;}
   100%   {left: calc(2% + 0px); width: 0px;}
 }
 
 @-webkit-keyframes line_r_animation {
   0%   {right: calc(2% + 50px); width: 0px;}
-  35%   {right: calc(2% + 0px); width: 50px;}
+  35%   {right: calc(2% + 0px); width: 5%;}
   70%   {right: calc(2% + 0px); width: 0px;}
   100%   {right: calc(2% + 0px); width: 0px;}
 }
 
 @keyframes line_r_animation {
   0%   {right: calc(2% + 50px); width: 0px;}
-  35%   {right: calc(2% + 0px); width: 50px;}
+  35%   {right: calc(2% + 0px); width: 5%;}
   70%   {right: calc(2% + 0px); width: 0px;}
   100%   {right: calc(2% + 0px); width: 0px;}
+}
+:root {
+  --light-color: #E7DFCD;
+  --highlight-color: #ffd700; /* Gold color for glowing */
+  --highlight-bg: #fffbea; /* Light background for highlighted tags */
+}
+
+.tag.glow {
+  box-shadow: 0 0 5px var(--highlight-color); /* Less spread for a subtler glow */
+  background-color: var(--highlight-bg); 
+}
+
+.tag.glow a {
+  color: #1F2125 !important; /* Change the text color to black for the anchor (link) element inside the glowing tag */
+}
+/* Add CSS styles for tooltips */
+.tag [data-title]:hover:after {
+  
+  content: attr(data-title);
+  position: absolute;
+  background-color: #1F2125;
+  border: 1px solid #E7DFCD !important;
+  border-width: 10px;
+  color: #E7DFCD;
+  padding: 5px;
+  border-radius: 10px;
+  white-space: nowrap;
+  z-index: 1;
+  font-size: .85rem;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50px;
 }
