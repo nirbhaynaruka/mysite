@@ -362,10 +362,10 @@ img {
     position: absolute;
     padding: 15% 0 0 15%;
     text-align: justify;
-    font-weight:bolder;
-    font-size: 0.9em;
-    font-family: 'Your-Font-Family', sans-serif; /* Replace 'Your-Font-Family' with the actual font you want to use */
-    line-height: 2.2; 
+    font-weight: lighter;
+    /* font-size: 0.9em; */
+    font-family: 'Your-Font-Family', sans-serif; 
+    line-height: 2; 
 }
 
 /* .hide {
