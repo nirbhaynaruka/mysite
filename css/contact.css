@@ -1,3 +1,5 @@
+
+
 input[type=text] {
     width: 100%;
     box-sizing: border-box;
@@ -88,12 +90,20 @@ input[type=reset] {
 }
 
 .sec1, .sec2{
-    height: 50%;
+    height: 45%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     }
+
+.sec2{
+   background-position: calc(30% - 5%) center;
+   background-image: url("../assets/1.png");
+   /* display: block; */
+   background-repeat: no-repeat;
+   
+}
 .social-menu {
     text-align: center;
     
@@ -107,7 +117,7 @@ input[type=checkbox], input[type=radio]{
     opacity: 0;
 }
   .menu-item, .social-menu-open-button {
-      background: #fff;
+      background: #E7DFCD;
       border-radius: 100%;
       width: 80px;
       height: 80px;
@@ -288,11 +298,11 @@ input[type=checkbox], input[type=radio]{
       box-shadow: 0 0 5px #171719, 0 0 10px #E7DFCD, 0 0 15px #E7DFCD, 0 0 20px #E7DFCD, 0 0 25px #E7DFCD, 0 0 30px #E7DFCD, 0 0 35px #E7DFCD;
     }
     50% {
-      box-shadow: 0 0 2px #171719, 0 0 4px #E7DFCD, 0 0 6px #E7DFCD, 0 0 8px #E7DFCD, 0 0 10px #E7DFCD, 0 0 12px #E7DFCD, 0 0 14px #E7DFCD;
+      box-shadow: 0 0 2px #171719, 0 0 4px #E7DFCD, 0 0 6px #E7DFCD, 0 0 8px #E7DFCD, 0 0 10px #E7DFCD, 0 0 12px #E7DFCD, 0 0 14px white;
     }
   }
   
   .social-menu-open-button {
-    animation: glow 2s ease-in-out infinite;
+    animation: glow 4s ease-in-out infinite;
   }
   

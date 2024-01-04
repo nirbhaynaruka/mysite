@@ -5044,7 +5044,7 @@ p {
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;
+    top: 4.5%;
     left: 0;
     display: block;
     z-index: 3;
@@ -5907,7 +5907,7 @@ p {
 }
 
 .work.\--careindia .work__obj.\--mobile  {
-    background-size: 70% 50%;
+    background-size: 60% 40%;
     margin-top: 18%;
     background-image: url('../assets/careindia.png')
 }
@@ -10624,7 +10624,7 @@ p {
 
 #works .menu-works {
     position: absolute;
-    top: 0;
+    top: -2%;
     right: 30px;
     height: 100%;
     z-index: 1

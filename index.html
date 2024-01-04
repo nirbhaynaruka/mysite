@@ -78,45 +78,71 @@
             <h4><a>Nirbhay Singh Naruka</a></h4>
         </div>
     </header>
-    <section class="container">
+    <section id="one" class="container">
         <div class="row">
-            <div class="col-md-6 order-2 order-md-1">
+            <div class="col-md-6">
                 <div class="text">
                     <p>
                        Business Analyst, with expertise as a full-stack developer, Android developer, and freelancer. <br>
                        During my undergraduate studies in Computer Science and Engineering, my work was recognized in Forbes 30 Under 30 in Detroit 2019. After graduating, I joined Deloitte in 2021 as a Solution Delivery Analyst and was soon promoted to Solution Delivery Associate. I recently enrolled in a master’s program in Business Analytics, through which I aim to complement my technical background with business acumen and to take on leadership roles where I can apply my skills in technology and analytics to solve complex business challenges.
                     </p>
                 </div>
+                
             </div>
-            <div class="col-md-6 order-md-2">
+            <div class="col-md-6">
                 <div class="image">
 
                     <img src="assets/61.svg" />
                 </div>
             </div>
-
         </div>
     </section>
-    <div class="wrapper-inner-tab-backgrounds-second">
+    <div class="switch">
+        <label for="toggle-arrow">
+            <input type="checkbox" id="toggle-arrow" hidden>
+            <svg class="arrows" id="clickk">
+              <path class="a1" d="M0 0 L30 32 L60 0"></path>
+              <path class="a2" d="M0 20 L30 52 L60 20"></path>
+              <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+          </label>
+    </div>
+    <div  id="one" class="wrapper-inner-tab-backgrounds-second">
         <div class="sim-button button30 aButton rotateX github"><span><a href="html/Expertise.html">Expertise</a></span>
         </div>
     </div>
-    <div class="wrapper-inner-tab-backgrounds-first">
+    <div   id="one" class="wrapper-inner-tab-backgrounds-first">
         <div class="sim-button1 button30 aButton rotateX"><span><a href="html/works.html">Works</a></span></div>
     </div>
-
-    <footer>
-        <div class="social_icons">
+    <section id="two">
+        <object class="resume" data="assets/cv.pdf" type="application/pdf">
+          </object>
+    </section>
+    <footer id="one">
+        <div class="icons">
             <ul>
-                <li><a href="https://www.linkedin.com/in/nirbhay13" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                <li><a href="https://github.com/nirbhaynaruka" aria-label="Github"><i class="fab fa-github" aria-hidden="true"></i></a></li>
-                <li><a href="https://ieeexplore.ieee.org/document/9544846" aria-label="IEEE Asiancon Paper"><i class="fas fab fa-file-alt"></i></a></li> 
-                <li><a href="mailto:nirbhaynaruka@gmail.com" aria-label="Gmail"><i class="fas fab fa-envelope"></i></a></li>
-                <li><a href="tel:+18052159237" aria-label="Call"><i class="fas fab fa-phone"></i></a></li> 
-            
+                <li>
+                    <a href="https://www.linkedin.com/in/nirbhay13" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><ion-icon size="large"  name="logo-Linkedin"></ion-icon></a>
+                </li>
+                <li>
+                    <a href="https://github.com/nirbhaynaruka" aria-label="Github" target="_blank" rel="noopener noreferrer"><ion-icon size="large" name="logo-Github"></ion-icon></a>
+                </li>
+                
+                <li>
+                    <a href="https://ieeexplore.ieee.org/document/9544846" aria-label="IEEE Asiancon Paper" target="_blank" rel="noopener noreferrer"><ion-icon size="large" name="document-outline"></ion-icon></a>
+                </li>
+                <li>
+                    <a href="mailto:nirbhaynaruka@gmail.com" aria-label="Gmail" target="_blank" rel="noopener noreferrer"><ion-icon size="large" name="mail-outline"></ion-icon></a>
+                </li>
+                <li>
+                    <a href="tel:+18052159237" aria-label="Call" target="_blank" rel="noopener noreferrer"><ion-icon size="large" name="call-outline"></ion-icon></a>
+                </li>
             </ul>
         </div>
     </footer>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
@@ -140,6 +166,11 @@
         });
     </script>
    <script>
+$(document).ready(function(){
+  $('body').on("click touchstart", "#clickk", function(e){
+    $("#one, #two").toggle();
+  });
+});
 
 </script>
 
