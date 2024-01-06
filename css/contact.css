@@ -306,3 +306,134 @@ input[type=checkbox], input[type=radio]{
     animation: glow 4s ease-in-out infinite;
   }
   
+
+
+  [data-component*="dialog"] * {	
+   box-sizing: border-box;
+   outline-color: var(--dlg-outline-c, hsl(218, 79.19%, 35%))
+ }
+ :where([data-component*="dialog"]) {
+   --dlg-gap: 1em;
+   background: var(--dlg-bg, #fff);
+   border: var(--dlg-b, 0);
+   border-radius: var(--dlg-bdrs, 0.25em);
+   box-shadow: var(--dlg-bxsh, 0px 25px 50px -12px rgba(0, 0, 0, 0.25));
+   font-family:var(--dlg-ff, ui-sansserif, system-ui, sans-serif);
+   min-inline-size: var(--dlg-mis, auto);
+   padding: var(--dlg-p, var(--dlg-gap));
+   width: var(--dlg-w, fit-content);
+ }
+ :where([data-component="no-dialog"]:not([hidden])) {
+   display: block;
+   inset-block-start: var(--dlg-gap);
+   inset-inline-start: 50%;
+   position: fixed;
+   transform: translateX(-50%);
+ }
+ :where([data-component*="dialog"] menu) {
+   display: flex;
+   gap: calc(var(--dlg-gap) / 2);
+   justify-content: var(--dlg-menu-jc, flex-end);
+   margin: 0;
+   padding: 0;
+ }
+ :where([data-component*="dialog"] menu button) {
+   background-color: var(--dlg-button-bgc);
+   border: 0;
+   border-radius: var(--dlg-bdrs, 0.25em);
+   color: var(--dlg-button-c);
+   font-size: var(--dlg-button-fz, 0.8em);
+   padding: var(--dlg-button-p, 0.65em 1.5em);
+ }
+ :where([data-component*="dialog"] [data-ref="accept"]) {
+   --dlg-button-bgc: var(--dlg-accept-bgc, hsl(218, 79.19%, 46.08%));
+   --dlg-button-c: var(--dlg-accept-c, #fff);
+ }
+ :where([data-component*="dialog"] [data-ref="cancel"]) {
+   --dlg-button-bgc: var(--dlg-cancel-bgc, transparent);
+   --dlg-button-c: var(--dlg-cancel-c, inherit);
+ }
+ :where([data-component*="dialog"] [data-ref="fieldset"]) {
+   border: 0;
+   margin: unset;
+   padding: unset;
+ }
+ :where([data-component*="dialog"] [data-ref="message"]) {
+   font-size: var(--dlg-message-fz, 1.25em);
+   margin-block-end: var(--dlg-gap);
+ }
+ :where([data-component*="dialog"] [data-ref="template"]:not(:empty)) {
+   margin-block-end: var(--dlg-gap);
+   width: 100%;
+ }
+ 
+ /* hack for Firefox */
+ @-moz-document url-prefix() { 
+   [data-component="no-dialog"]:not([hidden]) {
+     inset-inline-start: 0;
+      transform: none;
+   }
+ }
+ 
+
+
+
+ /* Custom Prompt CSS */
+
+ .prompt-box input[type=text] {
+   width: 100%;
+   box-sizing: border-box;
+   border: none;
+   border-bottom: 2px solid #1F2125;
+   background-color: transparent;
+   outline: none;
+   color: #1F2125;
+   text-align: center;
+   padding: 2%;
+}
+.overlay {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.7);
+   z-index: 1000;
+ }
+ 
+ .prompt-box {
+   display: none;
+   position: fixed;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #E7DFCD;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 5px 15px #E7DFCD;
+   z-index: 1001;
+   width: 300px;
+ }
+ 
+ .prompt-input {
+   width: calc(100% - 20px);
+   padding: 10px;
+   margin-bottom: 20px;
+   border-radius: 5px;
+   border: 1px solid #1F2125;
+   outline: none;
+ }
+ 
+ .prompt-send-btn {
+   width: 100%;
+   padding: 10px 20px;
+   background-color: #1F2125;
+   color: #E7DFCD;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   outline: none;
+ }
+ 
+ 
