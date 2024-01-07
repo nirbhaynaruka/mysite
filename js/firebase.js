@@ -44,7 +44,7 @@ const documentId = userInput ? userInput : `cancelled_${Date.now()}`;
 
 try {
   await setDoc(doc(db, "messages", documentId), {
-    text: userInput,
+    text: userInputField,
     timestamp: new Date()
   });
 } catch (e) {
