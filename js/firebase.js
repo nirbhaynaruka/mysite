@@ -21,6 +21,8 @@ const perf = getPerformance(app);
 function openCustomPrompt() {
 document.querySelector('.overlay').style.display = 'block';
 document.querySelector('.prompt-box').style.display = 'block';
+
+
 }
 
 function closeCustomPrompt() {
@@ -31,30 +33,32 @@ document.querySelector('.prompt-box').style.display = 'none';
 async function submitAndReset() {
 const userInputField = document.getElementById('userInput');
 if (userInputField.value.trim() !== '') { 
-openCustomPrompt(); 
+// openCustomPrompt(); 
+document.querySelector('.overlay').style.display = 'block';
+document.querySelector('.prompt-box').style.display = 'block';
+document.querySelector('.prompt-send-btn').addEventListener('click', async function() {
+  const userInput = document.querySelector('.prompt-input').value;
+  const documentId = userInput ? userInput : `cancelled_${Date.now()}`;
+  try {
+    await setDoc(doc(db, "messages", documentId), {
+      text: userInputField.value,
+      timestamp: new Date()
+    });
+  } catch (e) {
+    console.error("Error adding document: ", e);
+  }
+  
+  document.getElementById('userInput').value = ''; 
+  toggleResetButton();
+  closeCustomPrompt(); 
+  });
 } else {
 alert("Please enter some text before sending."); 
 }
 
 }
 
-document.querySelector('.prompt-send-btn').addEventListener('click', async function() {
-const userInput = document.querySelector('.prompt-input').value;
-const documentId = userInput ? userInput : `cancelled_${Date.now()}`;
 
-try {
-  await setDoc(doc(db, "messages", documentId), {
-    text: userInputField,
-    timestamp: new Date()
-  });
-} catch (e) {
-  console.error("Error adding document: ", e);
-}
-
-document.getElementById('userInput').value = ''; 
-toggleResetButton();
-closeCustomPrompt(); 
-});
 
 async function submitAndResetc() {
   const userInput = document.getElementById('userInput').value;
