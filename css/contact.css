@@ -421,7 +421,7 @@ input[type=checkbox], input[type=radio]{
    padding: 10px;
    margin-bottom: 20px;
    border-radius: 5px;
-   border: 1px solid #1F2125;
+   border: 1px solid black;
    outline: none;
  }
  
