@@ -4,6 +4,9 @@
 a,p,h1,h2, span{
    color: #E7DFCD !important;
 }
+nav.navbar.navbar-inverse{
+    z-index: 100;
+}
 
 article,
 aside,
@@ -313,13 +316,6 @@ th {
     padding: 0
 }
 
-@font-face {
-    font-family: 'FontAwesome';
-    src: url(../fonts/font-awesome/fontawesome-webfont.eot?v=4.7.0&1475765937);
-    src: url(../fonts/font-awesome/fontawesome-webfont.eot?v=4.7.0&1475765937#iefix) format("embedded-opentype"), url(../fonts/font-awesome/fontawesome-webfont.woff2?v=4.7.0&1475765937) format("woff2"), url(../fonts/font-awesome/fontawesome-webfont.woff?v=4.7.0&1475765937) format("woff"), url(../fonts/font-awesome/fontawesome-webfont.ttf?v=4.7.0&1475765937) format("truetype"), url(../fonts/font-awesome/fontawesome-webfont.svg?v=4.7.0&1475765937#fontawesomeregular) format("svg");
-    font-weight: normal;
-    font-style: normal
-}
 
 .fa {
     display: inline-block;
@@ -5157,7 +5153,6 @@ p {
     height: 26px;
     top: 0;
     left: 0;
-    background: url('../img/marca-menu.svg?1478615073') left top no-repeat;
     background-size: 100% auto;
 }
 
@@ -5258,7 +5253,6 @@ p {
     margin: 0 19px 0 20px;
     border: 1px solid #fff;
     border: 1px solid rgba(255, 255, 255, 0.4);
-    background: url('../img/icons/bg-contador.svg?1478615073') center no-repeat;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%
@@ -6070,7 +6064,6 @@ p {
     display: block;
     float: right;
     clear: both;
-    background: url('../img/borda-menu-works.png?1475765937') right 20px repeat-y;
     margin-bottom: 18px;
 }
 
@@ -6144,7 +6137,6 @@ p {
         display: block;
         position: absolute;
         z-index: 10;
-        background: url('../img/icons/setas.svg?1478615073') center no-repeat;
         background-size: 100% auto
     }
 }
@@ -8222,7 +8214,6 @@ p {
     top: 50%;
     right: -45px;
     margin-top: -45px;
-    background: url('../img/icons/scroll.svg?1478615073') center no-repeat
 }
 
 .header-cliente__bt-scroll.\--amarelo {
@@ -8816,7 +8807,6 @@ p {
     margin: 0 40px;
     padding: 62px 29px 85px;
     text-align: center;
-    background: url('../img/mockup-iphone.png?1475765937') center no-repeat
 }
 
 @media (min-width: 0) and (max-width: 768px) {
@@ -8831,7 +8821,6 @@ p {
     margin: 0 30px;
     padding: 56px 18px 55px;
     text-align: center;
-    background: url('../img/mockup-ipad.png?1475765937') center no-repeat;
     -moz-background-size: 100% auto;
     -o-background-size: 100% auto;
     -webkit-background-size: 100% auto;
@@ -9403,7 +9392,6 @@ p {
     position: absolute;
     top: 50%;
     z-index: 4;
-    background: url('../img/line-link.svg?1478868301') center no-repeat
 }
 
 .link-landing.\--left {
@@ -10468,7 +10456,6 @@ p {
 #about-equipe .img {
     top: 50%;
     width: 100%;
-    background-image: url('../img/about/foto-03.jpg?1480095569');
     background-position: center;
     background-repeat: no-repeat;
     -moz-background-size: cover;
@@ -10611,7 +10598,7 @@ p {
 
 #works {
     overflow: hidden;
-    height: 100%
+    height: -webkit-fill-available;
 }
 
 #works .works {
@@ -11375,34 +11362,13 @@ p {
 .elem.\--triangulo-home:before {
     height: 121px;
     margin-bottom: 31px;
-    background-image: url(../img/elem-home-1.png?1479400837);
     background-size: 100% auto;
 }
 
 .elem.\--triangulo-home:after {
     height: 109px;
-    background-image: url(../img/elem-home-2.svg?1479400837);
 }
 
-@font-face {
-    font-family: "neuemachina-ultrabold";
-    src: url('../fonts/neuemachina-ultrabold/neuemachina-ultrabold.eot?1475765937');
-    src: url('../fonts/neuemachina-ultrabold/neuemachina-ultrabold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/neuemachina-ultrabold/neuemachina-ultrabold.woff2?1475765937') format('woff2'),
-        url('../fonts/neuemachina-ultrabold/neuemachina-ultrabold.woff?1475765937') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "neuemachina-light";
-    src: url('../fonts/neuemachina-light/neuemachina-light.eot?1475765937');
-    src: url('../fonts/neuemachina-light/neuemachina-light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/neuemachina-light/neuemachina-light.woff2?1475765937') format('woff2'),
-        url('../fonts/neuemachina-light/neuemachina-light.woff?1475765937') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
 .languages .line {
     width: 1px;
@@ -11527,7 +11493,6 @@ p {
     }
 
     .elem.\--triangulo-home:after {
-        background-image: url(../img/elem-home-2-mobile.svg?1479400837);
     }
 
     .menu__link:after {

@@ -397,3 +397,6 @@ animation: line_l_animation 3s infinite;
   transform: translateX(-50%);
   top: -50px;
 }
+#gallery-container{
+  overflow: auto;
+}
