@@ -3,16 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The $50 Prompt: An Interactive Report</title>
+    <title>AIMethods : Architecting Premium AI Prompts</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Chosen Palette: Calm Neutral Tech -->
-    <!-- Application Structure Plan: The SPA now features a distinct global header and footer, designed for site-wide consistency. The main content starts with a "Hero" section including a prominent CTA. The page-specific navigation (Value, Toolkit, Library, Strategy) is integrated as a sticky sub-navigation bar, ensuring easy access to content sections. The content flow is: "Value Proposition" (interactive checklist), "Prompt Architect's Toolkit" (interactive techniques), "Premium Prompt Library" (tabbed examples with CTA), "✨ Try a Premium Prompt ✨" (LLM-powered prompt generator), and "Market & Strategy" (visualized business case). This structure maintains the exploratory journey while fitting into a larger website framework. -->
-    <!-- Visualization & Content Choices: Report Info: Market Growth -> Goal: Show change -> Viz: Bar Chart (Chart.js) for clear trend visualization. Report Info: Premium Prompt Checklist -> Goal: Compare/Inform -> Method: Interactive HTML list, where clicking reveals details, making it more engaging than a static table. Report Info: Advanced Techniques -> Goal: Organize/Inform -> Method: Two-panel layout with a clickable menu, allowing focused exploration of each technique. Report Info: Prompt Examples -> Goal: Inform/Organize -> Method: Tabbed interface to cleanly present large code/text blocks without clutter. New Feature: Prompt Generation -> Goal: Demonstrate value -> Method: Text input + LLM call + text output. All choices adhere to the NO SVG/Mermaid rule and support the non-linear application structure. -->
-    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -111,10 +107,9 @@
 </head>
 <body class="antialiased">
 
-    <!-- Global Header -->
     <header class="bg-gray-800 text-white sticky top-0 z-50 shadow-md">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="https://aimethods.co" class="text-2xl font-bold text-white hover:text-gray-300 transition-colors">AIMethods.co</a>
+            <a href="https://aimethods.co" class="text-2xl font-bold text-white hover:text-gray-300 transition-colors">AIMethods</a>
             <div class="hidden md:flex space-x-8">
                 <a href="https://aimethods.co/home" class="text-white hover:text-gray-300 transition-colors">Home</a>
                 <a href="https://aimethods.co/products" class="text-white hover:text-gray-300 transition-colors">Products</a>
@@ -125,7 +120,6 @@
         </nav>
     </header>
 
-    <!-- Product-Specific Navigation -->
     <nav class="bg-white/80 backdrop-blur-md sticky top-[68px] z-40 shadow-sm border-b border-gray-200">
         <div class="container mx-auto px-6 py-3 flex justify-center md:justify-start space-x-6 md:space-x-8 text-gray-700">
             <a href="#hero" class="nav-link font-semibold text-blue-600">Prompts Overview</a>
@@ -140,10 +134,10 @@
     <main>
         <section id="hero" class="py-20 md:py-32 text-center bg-white">
             <div class="container mx-auto px-6">
-                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">Architecting the Premium AI Prompt</h1>
-                <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">This is a preview of our premium, expert-crafted AI prompts. Moving beyond simple queries, our $50 prompt packages engineer high-value instructions that deliver unparalleled results for analysts, creators, and builders.</p>
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">Architecting Your Premium AI Prompts</h1>
+                <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">This is a preview of our premium, expert-crafted AI prompts. Moving beyond simple queries, our specialized prompt packages engineer high-value instructions that deliver unparalleled results for analysts, creators, and builders.</p>
                 <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="https://example.com/join-waitlist" target="_blank" class="cta-button cta-button-primary">Join Our Waitlist</a>
+                    <a href="mailto:waitlist@aimethods.co?subject=AIMethods.co%20Premium%20Prompts%20Waitlist%20Inquiry" class="cta-button cta-button-primary">Join Our Waitlist</a>
                     <a href="https://example.com/contact-form" target="_blank" class="cta-button cta-button-secondary">Learn More</a>
                 </div>
                 <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -162,7 +156,7 @@
         <section id="value" class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">The Anatomy of a $50 Prompt</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">The Anatomy of a Premium Prompt</h2>
                     <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">A premium prompt is not just an instruction; it's a meticulously engineered solution. It justifies its value by automating complex tasks, reducing errors, and delivering expert-level insights that save significant time and resources. Click each criterion to see how.</p>
                 </div>
                 <div id="value-checklist" class="max-w-4xl mx-auto space-y-4">
@@ -198,8 +192,8 @@
                     </div>
                 </div>
                 <div class="mt-12 text-center">
-                    <p class="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">Ready to unlock the full power of AI for your specific needs? Join our waitlist to be notified when our full $50 prompt packages are available!</p>
-                    <a href="https://example.com/join-waitlist" target="_blank" class="cta-button cta-button-primary">Join the Waitlist Today!</a>
+                    <p class="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">Ready to unlock the full power of AI for your specific needs? Email us directly to join our waitlist and provide your input on pricing and package options for our full range of premium prompt packages!</p>
+                    <a href="mailto:waitlist@aimethods.co?subject=AIMethods.co%20Premium%20Prompts%20Waitlist%20Inquiry" class="cta-button cta-button-primary">Join the Waitlist Today!</a>
                 </div>
             </div>
         </section>
@@ -249,7 +243,6 @@
 
     </main>
 
-    <!-- Global Footer -->
     <footer class="bg-gray-800 text-gray-300 py-12">
         <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
@@ -444,11 +437,18 @@ You are a Professional Career Coach specializing in crafting impactful, personal
 **Input Data:**
 **Candidate's Name & Background:** [User provides info]
 **Target Company & Job Title:** [User provides info]
-**Job Description:** [User provides job description]
-**Key Achievements to Highlight:** [User provides list]
+**Hiring Manager Name (if known, otherwise leave blank):**
+**Job Description:**
+**Key Candidate Achievements/Skills to Highlight (specific examples):**
+* [Achievement 1: e.g., "Successfully managed CRM system for 200+ clients, improving data accuracy by 15%."]
+* [Achievement 2: e.g., "Led cross-functional team of 5 to launch new product, exceeding Q1 revenue targets by 10%."]
+* [Achievement 3: e.g., "Implemented new customer feedback loop, increasing customer satisfaction scores by 8%."]
+**Why Candidate is Interested in THIS Company/Role (specific reasons):**
+* [Reason 1: e.g., "Deep admiration for Company X's innovative approach to sustainable technology."]
+* [Reason 2: e.g., "Excited by the opportunity to contribute to a team focused on developing cutting-edge AI solutions."]
 
 **Output Format:**
-Provide the cover letter in a standard business letter format.
+Provide the cover letter in plain text, formatted as a standard business letter, ready for copy-pasting. Include a placeholder for the date and recipient address.
 `
             }
         };
