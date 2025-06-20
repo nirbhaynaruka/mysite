@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Calm Neutral Tech -->
+    <!-- Application Structure Plan: The SPA now features a distinct global header and footer, designed for site-wide consistency. The main content starts with a "Hero" section including a prominent CTA. The page-specific navigation (Value, Toolkit, Library, Strategy) is integrated as a sticky sub-navigation bar, ensuring easy access to content sections. The content flow is: "Value Proposition" (interactive checklist), "Prompt Architect's Toolkit" (interactive techniques), "Premium Prompt Library" (tabbed examples with CTA), "✨ Try a Premium Prompt ✨" (LLM-powered prompt generator), and "Market & Strategy" (visualized business case). The "Join Waitlist" buttons now direct users to a dedicated /waitlist page for systematic information gathering. -->
+    <!-- Visualization & Content Choices: Report Info: Market Growth -> Goal: Show change -> Viz: Bar Chart (Chart.js) for clear trend visualization. Report Info: Premium Prompt Checklist -> Goal: Compare/Inform -> Method: Interactive HTML list, where clicking reveals details, making it more engaging than a static table. Report Info: Advanced Techniques -> Goal: Organize/Inform -> Method: Two-panel layout with a clickable menu, allowing focused exploration of each technique. Report Info: Prompt Examples -> Goal: Inform/Organize -> Method: Tabbed interface to cleanly present large code/text blocks without clutter. New Feature: Prompt Generation -> Goal: Demonstrate value -> Method: Text input + LLM call + text output. All choices adhere to the NO SVG/Mermaid rule and support the non-linear application structure. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -107,9 +111,10 @@
 </head>
 <body class="antialiased">
 
+    <!-- Global Header -->
     <header class="bg-gray-800 text-white sticky top-0 z-50 shadow-md">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="https://aimethods.co" class="text-2xl font-bold text-white hover:text-gray-300 transition-colors">AIMethods</a>
+            <a href="https://aimethods.co" class="text-2xl font-bold text-white hover:text-gray-300 transition-colors">AiMethods</a>
             <div class="hidden md:flex space-x-8">
                 <a href="https://aimethods.co/home" class="text-white hover:text-gray-300 transition-colors">Home</a>
                 <a href="https://aimethods.co/products" class="text-white hover:text-gray-300 transition-colors">Products</a>
@@ -120,6 +125,7 @@
         </nav>
     </header>
 
+    <!-- Product-Specific Navigation -->
     <nav class="bg-white/80 backdrop-blur-md sticky top-[68px] z-40 shadow-sm border-b border-gray-200">
         <div class="container mx-auto px-6 py-3 flex justify-center md:justify-start space-x-6 md:space-x-8 text-gray-700">
             <a href="#hero" class="nav-link font-semibold text-blue-600">Prompts Overview</a>
@@ -137,8 +143,8 @@
                 <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">Architecting Your Premium AI Prompts</h1>
                 <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">This is a preview of our premium, expert-crafted AI prompts. Moving beyond simple queries, our specialized prompt packages engineer high-value instructions that deliver unparalleled results for analysts, creators, and builders.</p>
                 <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="mailto:waitlist@aimethods.co?subject=AIMethods.co%20Premium%20Prompts%20Waitlist%20Inquiry" class="cta-button cta-button-primary">Join Our Waitlist</a>
-                    <a href="https://example.com/contact-form" target="_blank" class="cta-button cta-button-secondary">Learn More</a>
+                    <a href="https://aimethods.co/waitlist" class="cta-button cta-button-primary">Join Our Waitlist</a>
+                    <a href="https://aimethods.co/contact-form" target="_blank" class="cta-button cta-button-secondary">Learn More</a>
                 </div>
                 <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                     <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
@@ -192,8 +198,8 @@
                     </div>
                 </div>
                 <div class="mt-12 text-center">
-                    <p class="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">Ready to unlock the full power of AI for your specific needs? Email us directly to join our waitlist and provide your input on pricing and package options for our full range of premium prompt packages!</p>
-                    <a href="mailto:waitlist@aimethods.co?subject=AIMethods.co%20Premium%20Prompts%20Waitlist%20Inquiry" class="cta-button cta-button-primary">Join the Waitlist Today!</a>
+                    <p class="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">Ready to unlock the full power of AI for your specific needs? Join our waitlist to be notified about pricing and package options for our full range of premium prompt packages!</p>
+                    <a href="https://aimethods.co/waitlist" class="cta-button cta-button-primary">Join the Waitlist Today!</a>
                 </div>
             </div>
         </section>
@@ -243,6 +249,7 @@
 
     </main>
 
+    <!-- Global Footer -->
     <footer class="bg-gray-800 text-gray-300 py-12">
         <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
@@ -555,7 +562,7 @@ Provide the cover letter in plain text, formatted as a standard business letter,
                     <p class="text-gray-600 mb-4">${prompt.value}</p>
                     <div class="mb-6">
                         <span class="font-semibold mr-2">Techniques Used:</span>
-                        ${prompt.techniques.map(t => `<span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">${t}</span>`).join('')}
+                        <span class="text-blue-600">${prompt.techniques.map(t => `<span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">${t}</span>`).join('')}</span>
                     </div>
                     <h4 class="font-semibold text-lg mb-2">Prompt Template:</h4>
                     <pre class="code-block"><code>${prompt.content.trim()}</code></pre>
