@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Methods – Prompt Library</title>
+    <link rel="shortcut icon" type="image/svg" href="../assets/code-solid.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background: #f4f5f7;
+      }
+    </style>
+    <script>
+      function copyPrompt(id) {
+        const prompt = document.getElementById(id).innerText;
+        navigator.clipboard.writeText(prompt).then(() => {
+          const button = document.querySelector(`[data-id="${id}"]`);
+          button.innerText = "Copied! ✅";
+          setTimeout(() => (button.innerText = "Copy Prompt"), 1500);
+        });
+      }
+    </script>
+  </head>
+  <body class="text-gray-900">
+ 
+
+    <main class="max-w-6xl mx-auto px-6 py-8">
+      <div class="text-center mb-10">
+        <h1 class="text-4xl font-extrabold text-gray-800 mb-2">🚀 Prompt Library</h1>
+        <p class="text-gray-600 text-base">Curated AI prompts for analysts, creators, and builders. Built by AI Methods.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white border border-gray-200 rounded-xl shadow-sm p-6">
+          <h3 class="text-lg font-semibold text-gray-800 mb-1">📌 SQL Debugger</h3>
+          <p class="text-xs text-gray-500 mb-3">Category: Data & Analytics</p>
+          <pre id="sql-debugger" class="bg-gray-100 p-3 rounded text-sm text-gray-800 whitespace-pre-wrap mb-4">
+You are a senior analytics engineer. I’ll paste a SQL query — you will: (1) summarize what it’s doing, (2) identify potential issues, and (3) suggest improvements for speed, clarity, or accuracy.
+          </pre>
+          <button data-id="sql-debugger" onclick="copyPrompt('sql-debugger')" class="px-3 py-1.5 bg-blue-600 text-white rounded-full text-sm hover:bg-blue-700 transition">Copy Prompt</button>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-xl shadow-sm p-6">
+          <h3 class="text-lg font-semibold text-gray-800 mb-1">📌 Resume Optimizer</h3>
+          <p class="text-xs text-gray-500 mb-3">Category: Job Search & Career</p>
+          <pre id="resume-optimizer" class="bg-gray-100 p-3 rounded text-sm text-gray-800 whitespace-pre-wrap mb-4">
+You are a job search strategist. I’ll give you my resume and a job description. Rewrite my resume so it aligns better with the role while preserving authenticity.
+          </pre>
+          <button data-id="resume-optimizer" onclick="copyPrompt('resume-optimizer')" class="px-3 py-1.5 bg-blue-600 text-white rounded-full text-sm hover:bg-blue-700 transition">Copy Prompt</button>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-xl shadow-sm p-6">
+          <h3 class="text-lg font-semibold text-gray-800 mb-1">📌 Dashboard Explainer</h3>
+          <p class="text-xs text-gray-500 mb-3">Category: Data & Analytics</p>
+          <pre id="dashboard-explainer" class="bg-gray-100 p-3 rounded text-sm text-gray-800 whitespace-pre-wrap mb-4">
+I’ll paste a dashboard screenshot or chart. Help me write a short executive summary that explains what’s happening in plain English, with any key insights or anomalies highlighted.
+          </pre>
+          <button data-id="dashboard-explainer" onclick="copyPrompt('dashboard-explainer')" class="px-3 py-1.5 bg-blue-600 text-white rounded-full text-sm hover:bg-blue-700 transition">Copy Prompt</button>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-xl shadow-sm p-6">
+          <h3 class="text-lg font-semibold text-gray-800 mb-1">📌 Cover Letter Draft</h3>
+          <p class="text-xs text-gray-500 mb-3">Category: Job Search & Career</p>
+          <pre id="cover-letter" class="bg-gray-100 p-3 rounded text-sm text-gray-800 whitespace-pre-wrap mb-4">
+Act as a professional copywriter. Write a short, punchy cover letter for the following job, using a confident but natural tone. I’ll paste the job description and my resume.
+          </pre>
+          <button data-id="cover-letter" onclick="copyPrompt('cover-letter')" class="px-3 py-1.5 bg-blue-600 text-white rounded-full text-sm hover:bg-blue-700 transition">Copy Prompt</button>
+        </div>
+      </div>
+
+      <div class="text-center text-xs text-gray-500 mt-16">
+        Built by <a href="https://aimethods.co" class="underline hover:text-blue-600">AI Methods</a> · Powered by caffeine & curiosity.
+      </div>
+    </main>
+  </body>
+</html>
