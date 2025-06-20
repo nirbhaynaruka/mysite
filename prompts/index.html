@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Chosen Palette: Calm Neutral Tech -->
-    <!-- Application Structure Plan: The SPA is designed as a non-linear, exploratory journey. It starts with a "Hero" section to introduce the core concept ($50 prompt). It's followed by "The Value Proposition," an interactive checklist showing why these prompts are premium. Next, "The Prompt Architect's Toolkit" allows users to interactively learn about advanced techniques. "The Premium Prompt Library" showcases the actual product examples in a clean, tabbed interface. Finally, "Market & Strategy" visualizes the business case. This structure guides the user from the "what" and "why" to the "how" and "what's next," prioritizing engagement and understanding over the report's original linear format. -->
-    <!-- Visualization & Content Choices: Report Info: Market Growth -> Goal: Show change -> Viz: Bar Chart (Chart.js) for clear trend visualization. Report Info: Premium Prompt Checklist -> Goal: Compare/Inform -> Method: Interactive HTML list, where clicking reveals details, making it more engaging than a static table. Report Info: Advanced Techniques -> Goal: Organize/Inform -> Method: Two-panel layout with a clickable menu, allowing focused exploration of each technique. Report Info: Prompt Examples -> Goal: Inform/Organize -> Method: Tabbed interface to cleanly present large code/text blocks without clutter. All choices adhere to the NO SVG/Mermaid rule and support the non-linear application structure. -->
+    <!-- Application Structure Plan: The SPA now features a distinct global header and footer, designed for site-wide consistency. The main content starts with a "Hero" section including a prominent CTA. The page-specific navigation (Value, Toolkit, Library, Strategy) is integrated as a sticky sub-navigation bar, ensuring easy access to content sections. The content flow is: "Value Proposition" (interactive checklist), "Prompt Architect's Toolkit" (interactive techniques), "Premium Prompt Library" (tabbed examples with CTA), "✨ Try a Premium Prompt ✨" (LLM-powered prompt generator), and "Market & Strategy" (visualized business case). This structure maintains the exploratory journey while fitting into a larger website framework. -->
+    <!-- Visualization & Content Choices: Report Info: Market Growth -> Goal: Show change -> Viz: Bar Chart (Chart.js) for clear trend visualization. Report Info: Premium Prompt Checklist -> Goal: Compare/Inform -> Method: Interactive HTML list, where clicking reveals details, making it more engaging than a static table. Report Info: Advanced Techniques -> Goal: Organize/Inform -> Method: Two-panel layout with a clickable menu, allowing focused exploration of each technique. Report Info: Prompt Examples -> Goal: Inform/Organize -> Method: Tabbed interface to cleanly present large code/text blocks without clutter. New Feature: Prompt Generation -> Goal: Demonstrate value -> Method: Text input + LLM call + text output. All choices adhere to the NO SVG/Mermaid rule and support the non-linear application structure. -->
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
         body {
@@ -80,27 +80,72 @@
         .prompt-card.active {
             display: block;
         }
+        .cta-button {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px; /* Fully rounded */
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .cta-button-primary {
+            background-color: #3B82F6; /* Blue-600 */
+            color: white;
+            border: 2px solid transparent;
+        }
+        .cta-button-primary:hover {
+            background-color: #2563EB; /* Blue-700 */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        .cta-button-secondary {
+            background-color: transparent;
+            color: #3B82F6; /* Blue-600 */
+            border: 2px solid #3B82F6;
+        }
+        .cta-button-secondary:hover {
+            background-color: #DBEAFE; /* Blue-100 */
+            color: #2563EB;
+        }
     </style>
 </head>
 <body class="antialiased">
 
-    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+    <!-- Global Header -->
+    <header class="bg-gray-800 text-white sticky top-0 z-50 shadow-md">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold text-gray-800">The $50 Prompt</a>
+            <a href="https://aimethods.co" class="text-2xl font-bold text-white hover:text-gray-300 transition-colors">AIMethods.co</a>
             <div class="hidden md:flex space-x-8">
-                <a href="#value" class="nav-link">Value</a>
-                <a href="#toolkit" class="nav-link">Toolkit</a>
-                <a href="#library" class="nav-link">Library</a>
-                <a href="#strategy" class="nav-link">Strategy</a>
+                <a href="https://aimethods.co/home" class="text-white hover:text-gray-300 transition-colors">Home</a>
+                <a href="https://aimethods.co/products" class="text-white hover:text-gray-300 transition-colors">Products</a>
+                <a href="https://aimethods.co/solutions" class="text-white hover:text-gray-300 transition-colors">Solutions</a>
+                <a href="https://aimethods.co/about" class="text-white hover:text-gray-300 transition-colors">About Us</a>
+                <a href="https://aimethods.co/contact" class="text-white hover:text-gray-300 transition-colors">Contact</a>
             </div>
         </nav>
     </header>
+
+    <!-- Product-Specific Navigation -->
+    <nav class="bg-white/80 backdrop-blur-md sticky top-[68px] z-40 shadow-sm border-b border-gray-200">
+        <div class="container mx-auto px-6 py-3 flex justify-center md:justify-start space-x-6 md:space-x-8 text-gray-700">
+            <a href="#hero" class="nav-link font-semibold text-blue-600">Prompts Overview</a>
+            <a href="#value" class="nav-link">Value</a>
+            <a href="#toolkit" class="nav-link">Toolkit</a>
+            <a href="#library" class="nav-link">Library</a>
+            <a href="#sparkle-prompt" class="nav-link">Sparkle Prompt</a>
+            <a href="#strategy" class="nav-link">Strategy</a>
+        </div>
+    </nav>
 
     <main>
         <section id="hero" class="py-20 md:py-32 text-center bg-white">
             <div class="container mx-auto px-6">
                 <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">Architecting the Premium AI Prompt</h1>
-                <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">Moving beyond simple queries to engineer high-value, expert-crafted AI instructions that command a premium and deliver unparalleled results.</p>
+                <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">This is a preview of our premium, expert-crafted AI prompts. Moving beyond simple queries, our $50 prompt packages engineer high-value instructions that deliver unparalleled results for analysts, creators, and builders.</p>
+                <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="https://example.com/join-waitlist" target="_blank" class="cta-button cta-button-primary">Join Our Waitlist</a>
+                    <a href="https://example.com/contact-form" target="_blank" class="cta-button cta-button-secondary">Learn More</a>
+                </div>
                 <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                     <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
                         <p class="text-3xl font-bold text-blue-600" id="market-size-stat">$6,533.87B</p>
@@ -152,10 +197,29 @@
                     <div id="prompt-content-area" class="bg-white p-6 rounded-lg shadow-md">
                     </div>
                 </div>
+                <div class="mt-12 text-center">
+                    <p class="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">Ready to unlock the full power of AI for your specific needs? Join our waitlist to be notified when our full $50 prompt packages are available!</p>
+                    <a href="https://example.com/join-waitlist" target="_blank" class="cta-button cta-button-primary">Join the Waitlist Today!</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sparkle-prompt" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">✨ Try a Premium Prompt ✨</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">See the power of a meticulously crafted prompt! Enter a basic idea, and our AI will transform it into a professional, high-value prompt using the techniques outlined in our toolkit.</p>
+                <div class="max-w-3xl mx-auto bg-gray-50 p-6 rounded-lg shadow-md">
+                    <textarea id="basicPromptInput" class="w-full p-4 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent mb-4 resize-y min-h-[120px] text-gray-700" placeholder="e.g., Write a marketing email for a new software feature called 'AI Methods Pro'."></textarea>
+                    <button id="generateSparklePrompt" class="cta-button cta-button-primary w-full md:w-auto">Generate Premium Prompt</button>
+                    <div id="sparklePromptOutput" class="mt-6 text-left">
+                        <div id="loadingIndicator" class="hidden text-center text-blue-600 font-semibold">Generating your premium prompt...</div>
+                        <pre id="generatedPromptDisplay" class="code-block whitespace-pre-wrap hidden"></pre>
+                    </div>
+                </div>
             </div>
         </section>
         
-        <section id="strategy" class="py-20 bg-white">
+        <section id="strategy" class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Market Opportunity & Strategy</h2>
@@ -185,10 +249,41 @@
 
     </main>
 
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-6 text-center">
-            <h3 class="text-2xl font-bold">Conclusion & Recommendations</h3>
-            <p class="mt-4 max-w-3xl mx-auto text-gray-300">The future of AI is specialized. By prioritizing deep domain expertise, embracing rigorous refinement, and focusing on measurable value, a premium prompt library can lead the market, empowering professionals with indispensable AI tools.</p>
+    <!-- Global Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-12">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">AIMethods.co</h3>
+                <p class="text-sm">Empowering professionals with indispensable AI tools and expert-crafted prompts to elevate their work.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold text-white mb-4">Products</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="https://aimethods.co/prompts" class="hover:text-white transition-colors">Premium Prompts</a></li>
+                    <li><a href="https://aimethods.co/custom-solutions" class="hover:text-white transition-colors">Custom AI Solutions</a></li>
+                    <li><a href="https://aimethods.co/training" class="hover:text-white transition-colors">AI Training</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-white mb-4">Resources</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="https://aimethods.co/blog" class="hover:text-white transition-colors">Blog</a></li>
+                    <li><a href="https://aimethods.co/case-studies" class="hover:text-white transition-colors">Case Studies</a></li>
+                    <li><a href="https://aimethods.co/faq" class="hover:text-white transition-colors">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-white mb-4">Company</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="https://aimethods.co/about" class="hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="https://aimethods.co/contact" class="hover:text-white transition-colors">Contact</a></li>
+                    <li><a href="https://aimethods.co/privacy" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                    <li><a href="https://aimethods.co/terms" class="hover:text-white transition-colors">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 mt-8 border-t border-gray-700 pt-8 text-center text-sm">
+            &copy; 2025 AIMethods.co. All rights reserved.
         </div>
     </footer>
 
@@ -512,6 +607,74 @@ Provide the cover letter in a standard business letter format.
                         }
                     }
                 }
+            }
+        });
+
+        // Gemini API Integration - Sparkle Prompt Generator
+        const basicPromptInput = document.getElementById('basicPromptInput');
+        const generateSparklePrompt = document.getElementById('generateSparklePrompt');
+        const loadingIndicator = document.getElementById('loadingIndicator');
+        const generatedPromptDisplay = document.getElementById('generatedPromptDisplay');
+
+        generateSparklePrompt.addEventListener('click', async () => {
+            const userInput = basicPromptInput.value.trim();
+            if (!userInput) {
+                generatedPromptDisplay.textContent = 'Please enter a basic idea to generate a premium prompt.';
+                generatedPromptDisplay.classList.remove('hidden');
+                generatedPromptDisplay.style.color = '#DC2626'; // Red for error
+                return;
+            }
+
+            loadingIndicator.classList.remove('hidden');
+            generatedPromptDisplay.classList.add('hidden');
+            generatedPromptDisplay.style.color = ''; // Reset color
+
+            try {
+                const prompt = `You are an expert prompt engineer specializing in crafting highly effective, high-value prompts.
+A user has provided a basic idea for a prompt. Your task is to transform this basic idea into a comprehensive, premium-grade prompt suitable for professional use.
+Incorporate elements like:
+- A clear, specific persona for the AI to adopt.
+- Explicit instructions for desired tone and style.
+- A structured output format (e.g., Markdown headings, bullet points, JSON schema if applicable).
+- A request for step-by-step reasoning (Chain-of-Thought) if the task is complex.
+- Consideration of potential constraints or specific requirements.
+
+**Basic Idea:** ${userInput}
+
+**Premium Prompt:**`;
+
+                let chatHistory = [];
+                chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+                const payload = { contents: chatHistory };
+                const apiKey = "";
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+                
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const text = result.candidates[0].content.parts[0].text;
+                    generatedPromptDisplay.textContent = text;
+                    generatedPromptDisplay.classList.remove('hidden');
+                } else {
+                    generatedPromptDisplay.textContent = 'Failed to generate prompt. Please try again.';
+                    generatedPromptDisplay.classList.remove('hidden');
+                    generatedPromptDisplay.style.color = '#DC2626'; // Red for error
+                }
+            } catch (error) {
+                console.error('Error generating premium prompt:', error);
+                generatedPromptDisplay.textContent = 'An error occurred. Please try again.';
+                generatedPromptDisplay.classList.remove('hidden');
+                generatedPromptDisplay.style.color = '#DC2626'; // Red for error
+            } finally {
+                loadingIndicator.classList.add('hidden');
             }
         });
     });
